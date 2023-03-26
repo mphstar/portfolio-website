@@ -38,7 +38,7 @@ export default function Navbar(props: typeTitle) {
 
     return (
         <>
-            <div onClick={(prev) => setStatus(!prev)} className={`bg-black transition opacity-60 z-[101] h-screen w-screen fixed bottom-0 ${!statusDrawer ? "opacity-0 pointer-events-none" : ""}`}></div>
+            <div onClick={(prev) => setStatus(!prev)} className={`bg-black transition  z-[101] h-screen w-screen fixed bottom-0 ${statusDrawer ? "opacity-60 pointer-events-auto" : "opacity-0 pointer-events-none"}`}></div>
             <div className=' flex justify-between fixed w-full items-center z-[101] py-4'>
                 {/* burger */}
                 <div onClick={() => {
