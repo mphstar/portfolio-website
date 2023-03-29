@@ -25,7 +25,7 @@ export default function Navbar(props: typeTitle) {
 
 
     useEffect(() => {
-        // console.log(data)
+        console.log(data)
         window.addEventListener('resize', function () {
             setStatus(false)
         });
@@ -71,9 +71,9 @@ export default function Navbar(props: typeTitle) {
                             <li className={selectedNav == "Achievements" ? "bg-[#5F5F5F] text-white px-2 rounded-md py-2 dark:bg-white dark:text-black" : "px-2 rounded-md py-2 hover:bg-slate-200 w-full dark:hover:bg-slate-700"}><Link className='w-full flex h-full' key="achievements" href="/achievements">Achievements</Link></li>
                             <li className={selectedNav == "Contact" ? "bg-[#5F5F5F] text-white px-2 rounded-md py-2 dark:bg-white dark:text-black" : "px-2 rounded-md py-2 hover:bg-slate-200 w-full dark:hover:bg-slate-700"}><Link className='w-full flex h-full' key="contact" href="/contact">Contact</Link></li>
 
-                        
+
                         </ul>
-                        <div className='flex flex-col mb-8 w-full md:hidden'>
+                        {data?.isPlaying ? <div className='flex flex-col mb-8 w-full md:hidden'>
                             <div className='h-[1px] w-full bg-gray-300 dark:bg-gray-600 mb-4'></div>
                             <p className='poppins-regular text-sm overflow-hidden text-gray-400 flex flex-row h-fit w-40'>{data?.isPlaying ? "Listening To Spotify" : "Recently Played Songs"}</p>
                             <div className='flex flex-row gap-2 mt-2 w-40'>
@@ -83,12 +83,13 @@ export default function Navbar(props: typeTitle) {
                                     <p className='poppins-regular text-xs overflow-hidden flex flex-row h-fit w-40'>{data?.title}</p>
                                 </div>
                             </div>
-                        </div>
+                        </div> : ''}
+
                     </div>
 
                 </div>
 
-                <div className='ml-4 md:ml-8 px-4 py-2 order-2 md:order-1 h-full hover:bg-slate-200 rounded-md cursor-default dark:hover:bg-slate-700'>
+                <div className=' md:ml-8 px-4 py-2 order-2 md:order-1 h-full hover:bg-slate-200 rounded-md cursor-default dark:hover:bg-slate-700'>
                     <p className='poppins-regular'>{title}</p>
                 </div>
                 {/* set theme */}
