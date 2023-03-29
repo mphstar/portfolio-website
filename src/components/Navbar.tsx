@@ -60,12 +60,12 @@ export default function Navbar(props: typeTitle) {
                             <div className='flex flex-col h-fit w-full mt-8   md:hidden'>
                                 <div className="flex flex-col h-fit justify-start items-start overflow-hidden w-40">
                                     <Image src={'/profile.png'} alt="Profile" width={30} height={30} className='rounded-full w-24 overflow-hidden h-24' />
-                                    <p className='poppins-semibold text-blue-900 text-sm mt-2'>@Mphstar._</p>
+                                    <p className='poppins-semibold text-blue-900 text-sm mt-2 dark:text-white'>@Mphstar._</p>
 
                                 </div>
                             </div>
-                            <p className='poppins-bold text-sm overflow-hidden md:hidden mt-8 mb-2 text-gray-400'>List Pages</p>
-                            <div className='h-[1px] w-full bg-gray-300 mb-4 md:hidden'></div>
+                            <p className='poppins-bold text-sm overflow-hidden md:hidden w-40 mt-8 mb-2 text-gray-400'>List Pages</p>
+                            <div className='h-[1px] w-full bg-gray-300 dark:bg-gray-600 mb-4 md:hidden'></div>
                             <li className={selectedNav == "Home" ? "bg-[#5F5F5F] text-white px-2 rounded-md py-2 dark:bg-white dark:text-black" : "px-2 rounded-md py-2 hover:bg-slate-200 w-full dark:hover:bg-slate-700"}><Link className='w-full flex h-full' key="home" href="/">Home</Link></li>
                             <li className={selectedNav == "Portofolio" ? "bg-[#5F5F5F] text-white px-2 rounded-md py-2 dark:bg-white dark:text-black" : "px-2 rounded-md py-2 hover:bg-slate-200 w-full dark:hover:bg-slate-700"}><Link className='w-ful flex h-full' key="portofolio" href="/portofolio">Portofolio</Link></li>
                             <li className={selectedNav == "Achievements" ? "bg-[#5F5F5F] text-white px-2 rounded-md py-2 dark:bg-white dark:text-black" : "px-2 rounded-md py-2 hover:bg-slate-200 w-full dark:hover:bg-slate-700"}><Link className='w-full flex h-full' key="achievements" href="/achievements">Achievements</Link></li>
@@ -74,7 +74,7 @@ export default function Navbar(props: typeTitle) {
                         
                         </ul>
                         <div className='flex flex-col mb-8 w-full md:hidden'>
-                            <div className='h-[1px] w-full bg-gray-300 mb-4'></div>
+                            <div className='h-[1px] w-full bg-gray-300 dark:bg-gray-600 mb-4'></div>
                             <p className='poppins-regular text-sm overflow-hidden text-gray-400 flex flex-row h-fit w-40'>{data?.isPlaying ? "Listening To Spotify" : "Recently Played Songs"}</p>
                             <div className='flex flex-row gap-2 mt-2 w-40'>
                                 <img src={data?.albumImageUrl} alt={data?.album} className='object-cover w-10 rounded-sm' />
