@@ -54,7 +54,7 @@ export default function Navbar(props: typeTitle) {
 
                 </div>
                 <div className={`${statusDrawer ? "duration-700 w-60 px-4" : "w-0 duration-700"} md:duration-[0ms] fixed top-0 h-screen md:h-fit md:static md:order-2 md:flex md:w-fit bg-bg-light dark:bg-bg-dark md:bg-transparent dark:md:bg-transparent overflow-x-hidden`}>
-                    <div className='flex flex-col justify-between h-full'>
+                    <div className='flex flex-col justify-between h-full overflow-y-auto'>
 
                         <ul className={`flex flex-col mt-2 md:mt-0 md:flex-row gap-2`}>
                             <div className='flex flex-col h-fit w-full mt-8   md:hidden'>
