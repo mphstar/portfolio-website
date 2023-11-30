@@ -1,22 +1,25 @@
-import Main from '@/components/Template'
+import Main from "@/components/Template";
 import Lottie from "lottie-react";
-import React from 'react'
-import animationData from '../components/lottie/maintenance.json'
-export default function portofolio() {
+import React from "react";
+import animationData from "../components/lottie/maintenance.json";
+import Image from "next/image";
+import CardPortfolio from "@/components/CardPortfolio";
+import data from "../models/data_portfolio.json";
 
-    return (
-        <Main selectedNav='Portofolio' title='Mphstar | Portofolio'>
-            <div className='flex flex-col w-full  mt-16 justify-start  items-center overflow-hidden'>
-                <div className='flex flex-col items-center h-full flex-shrink mt-10 mb-20'>
-                    <Lottie
-                        animationData={animationData}
-                        autoplay={true}
-                        loop={true}
-                        className="h-[400px]"
-                    />
-                <p className='poppins-semibold text-2xl flex text-center'>Comming Soon 👋</p>
-                </div>
-            </div>
-        </Main>
-    )
+export default function portofolio() {
+  return (
+    <Main selectedNav="Portofolio" title="Mphstar | Portofolio">
+      <div className="flex flex-col w-full flex-1 h-full mt-24 justify-start px-4 md:px-8 items-center overflow-hidden">
+        <div className="w-full flex flex-col justify-center">
+          <p className="font-semibold text-3xl">Portfolio</p>
+          <p>List project yang saya buat.</p>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-4 gap-4">
+            {data.map((item, index) => {
+              return <CardPortfolio data={item} key={index} />;
+            })}
+          </div>
+        </div>
+      </div>
+    </Main>
+  );
 }

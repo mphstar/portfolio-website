@@ -1,0 +1,42 @@
+[
+  {
+    "image": "https://media.licdn.com/dms/image/sync/D5627AQGSpvUycF-Zvw/articleshare-shrink_800/0/1701148117745?e=1701964800&v=beta&t=x1g2lrax5PHDh-sGUpBxawS6BhUgvxCqg_iw2mPyU7M",
+    "title": "Toko SA",
+    "deskripsi": "Aplikasi Point of Sale Berbasis Desktop untuk mempermudah pengelolaan penjualan barang.",
+    "github": null,
+    "build": null,
+    "redirect": null
+  },
+  {
+    "image": "https://media.licdn.com/dms/image/D562DAQGa-hH7XcL25Q/profile-treasury-document-cover-images_480/0/1701147782903?e=1701939600&v=beta&t=74Oe-ZpDoQhNKmPHBOvjI3PdhZttdRXL3ZWz4bkv2Oo",
+    "title": "Sistem Informasi Gandrung",
+    "deskripsi": "Merancang dan mengembangkan sistem Point of Sale restoran Mie Gandrung berbasis desktop dengan menggunakan bahasa pemrograman Java.",
+    "github": null,
+    "build": null,
+    "redirect": null
+  },
+  {
+    "image": "https://media.licdn.com/dms/image/D562DAQF8OtKokZ271w/profile-treasury-image-shrink_1280_1280/0/1701332381935?e=1701961200&v=beta&t=QVZlLFQG-sWw03autv7XXXzwnly5yEGEoVEpFxQt2QI",
+    "title": "WG Optical",
+    "deskripsi": "Aplikasi Point of Sales berbasis website dan mobile untuk butik Tiara di Banyuwangi.",
+    "github": null,
+    "build": null,
+    "redirect": null
+  },
+  {
+    "image": "https://media.licdn.com/dms/image/D562DAQE-JkM4ErllWQ/profile-treasury-image-shrink_1280_1280/0/1701270487231?e=1701964800&v=beta&t=fWmkTB2z34f0AEad90-E8LaJaAka6A7NsD-4jXpoX_E",
+    "title": "Tijara Store",
+    "deskripsi": "Aplikasi Point of Sales berbasis website dan mobile untuk butik Tiara di Banyuwangi.",
+    "github": null,
+    "build": null,
+    "redirect": null
+  },
+  {
+    "image": "https://media.licdn.com/dms/image/D562DAQHTDtNeJHjZUQ/profile-treasury-image-shrink_800_800/0/1701271163268?e=1701964800&v=beta&t=WpEX1ljeHFU74Jff_yhbmQVfNzQXyo0NShrClfSjd9c",
+    "title": "Gesture Recogniton based Kiosk",
+    "deskripsi": "Website Point of Sale dengan tambahan Gesture Recognition untuk dapat melakukan control hanya dengan menggerakan tangan pada sensor kamera. Setelah melakukan transaksi, nota transaksi akan langsung dicetak secara otomatis. Memiliki 1 hak akses admin yang dapat melakukan tambah, ubah, hapus barang yang ditampilkan, serta melihat seluruh riwayat transaksi. ",
+    "github": null,
+    "build": null,
+    "redirect": null
+  }
+]

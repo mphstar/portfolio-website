@@ -25,7 +25,6 @@ export default function Navbar(props: typeTitle) {
 
 
     useEffect(() => {
-        console.log(data)
         window.addEventListener('resize', function () {
             setStatus(false)
         });
@@ -37,6 +36,10 @@ export default function Navbar(props: typeTitle) {
             setIcon('/assets/icons/menu-black.png')
             setMode('/assets/icons/dark.svg')
         }
+
+        return () => {
+            window.removeEventListener('resize', () => {});
+        };
     })
 
 
@@ -45,7 +48,7 @@ export default function Navbar(props: typeTitle) {
     return (
         <>
             <div onClick={(prev) => setStatus(!prev)} className={`bg-black transition  z-[101] h-screen w-screen fixed bottom-0 ${statusDrawer ? "opacity-60 pointer-events-auto" : "opacity-0 pointer-events-none"}`}></div>
-            <div className=' flex justify-between fixed w-full items-center z-[101] py-4'>
+            <div className=' flex justify-between fixed w-full bg-bg-light dark:bg-bg-dark items-center z-[101] py-4'>
                 {/* burger */}
                 <div onClick={() => {
                     setStatus(!statusDrawer)
