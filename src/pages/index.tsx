@@ -32,7 +32,7 @@ export default function Index() {
         strokeWidth={5}
         strokeColor={color}
       />
-      <div className="flex flex-col mt-16 h-[80vh] items-center justify-center md:flex-row md:gap-12 select-none">
+      <div className="flex flex-col mt-24 h-[80vh] items-center justify-center md:flex-row md:gap-12 select-none">
           <Image
             className="h-fit w-52 order-1"
             height={400}
