@@ -7,7 +7,13 @@ module.exports = {
       colors: {
         "bg-light": '#F9FAFB',
         "bg-dark": '#101113'
-      }
+      },
+      fontFamily: {
+        "poppins-regular": "poppins-regular",
+        "poppins-semibold": "poppins-semibold",
+        "poppins-bold": "poppins-bold",
+        "virgil": "Virgil",
+    },
     },
   },
   plugins: [

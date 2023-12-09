@@ -6,7 +6,7 @@ import animationData from '../components/lottie/maintenance.json'
 export default function achievements() {
     return (
         <Main selectedNav='Achievements' title='Mphstar | Achievements'>
-            <div className='flex flex-col w-full  mt-16 justify-start  items-center overflow-hidden'>
+            <div className='flex flex-col w-full flex-1  mt-16 justify-start  items-center overflow-hidden'>
                 <div className='flex flex-col items-center h-full flex-shrink mt-10 mb-20'>
                     <Lottie
                         animationData={animationData}

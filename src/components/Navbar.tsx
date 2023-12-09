@@ -53,13 +53,13 @@ export default function Navbar(props: typeTitle) {
                 <div onClick={() => {
                     setStatus(!statusDrawer)
                 }} className='px-4 ml-4 py-2 order-1 md:hidden rounded-md md:hover:bg-slate-200 cursor-default md:dark:hover:bg-slate-700'>
-                    <Image src={icon} className='' width={25} height={25} alt='burger' />
+                    <Image src={icon} className='' width={18} height={18} alt='burger' />
 
                 </div>
-                <div className={`${statusDrawer ? "duration-700 w-60 px-4" : "w-0 duration-700"} md:duration-[0ms] fixed top-0 h-screen md:h-fit md:static md:order-2 md:flex md:w-fit bg-bg-light dark:bg-bg-dark md:bg-transparent dark:md:bg-transparent overflow-x-hidden`}>
+                <div className={`${statusDrawer ? "duration-700 translate-x-0 px-4" : "-translate-x-[250px] md:translate-x-0 duration-700"} w-60 md:duration-[0ms]  fixed top-0 h-screen z-[200] md:h-fit md:static md:order-2 md:flex md:w-fit bg-bg-light dark:bg-bg-dark md:bg-transparent dark:md:bg-transparent overflow-x-hidden`}>
                     <div className='flex flex-col justify-between h-full overflow-y-auto'>
 
-                        <ul className={`flex flex-col mt-2 md:mt-0 md:flex-row gap-2`}>
+                        <ul className={`flex flex-col mt-2 md:mt-0 md:flex-row md:gap-4`}>
                             <div className='flex flex-col h-fit w-full mt-8   md:hidden'>
                                 <div className="flex flex-col h-fit justify-start items-start overflow-hidden w-40">
                                     <Image src={'/profile.png'} alt="Profile" width={30} height={30} className='rounded-full w-24 overflow-hidden h-24' />
@@ -69,10 +69,11 @@ export default function Navbar(props: typeTitle) {
                             </div>
                             <p className='poppins-bold text-sm overflow-hidden md:hidden w-40 mt-8 mb-2 text-gray-400'>Menu</p>
                             {/* <div className='h-[1px] w-full bg-gray-300 dark:bg-gray-600 mb-4 md:hidden'></div> */}
-                            <li className={selectedNav == "Home" ? "bg-[#5F5F5F] text-white px-2 rounded-md py-2 dark:bg-white dark:text-black" : "px-2 rounded-md py-2 hover:bg-slate-200 w-full dark:hover:bg-slate-700"}><Link className='w-full flex h-full' key="home" href="/">Home</Link></li>
-                            <li className={selectedNav == "Portofolio" ? "bg-[#5F5F5F] text-white px-2 rounded-md py-2 dark:bg-white dark:text-black" : "px-2 rounded-md py-2 hover:bg-slate-200 w-full dark:hover:bg-slate-700"}><Link className='w-ful flex h-full' key="portofolio" href="/portofolio">Portofolio</Link></li>
-                            <li className={selectedNav == "Achievements" ? "bg-[#5F5F5F] text-white px-2 rounded-md py-2 dark:bg-white dark:text-black" : "px-2 rounded-md py-2 hover:bg-slate-200 w-full dark:hover:bg-slate-700"}><Link className='w-full flex h-full' key="achievements" href="/achievements">Achievements</Link></li>
-                            <li className={selectedNav == "Contact" ? "bg-[#5F5F5F] text-white px-2 rounded-md py-2 dark:bg-white dark:text-black" : "px-2 rounded-md py-2 hover:bg-slate-200 w-full dark:hover:bg-slate-700"}><Link className='w-full flex h-full' key="contact" href="/contact">Contact</Link></li>
+                            <li className={selectedNav == "Home" ? "text-blue-700 font-semibold border-b-2 border-b-blue-700 py-2  dark:text-blue-400 dark:border-b-blue-400" : " rounded-md py-2 w-full "}><Link className='w-full flex h-full' key="home" href="/">Home</Link></li>
+                            <li className={selectedNav == "Portfolio" ? "text-blue-700 font-semibold  border-b-2 border-b-blue-700 py-2  dark:text-blue-400 dark:border-b-blue-400" : " rounded-md py-2 w-full "}><Link className='w-ful flex h-full' key="portofolio" href="/portofolio">Portofolio</Link></li>
+                            <li className={selectedNav == "Achievements" ? "text-blue-700 font-semibold  border-b-2 border-b-blue-700 py-2  dark:text-blue-400 dark:border-b-blue-400" : " rounded-md py-2 w-full "}><Link className='w-full flex h-full' key="achievements" href="/achievements">Achievements</Link></li>
+                            <li className={selectedNav == "About" ? "text-blue-700 font-semibold  border-b-2 border-b-blue-700 py-2  dark:text-blue-400 dark:border-b-blue-400" : " rounded-md py-2 w-full "}><Link className='w-full flex h-full' key="about" href="/about">About</Link></li>
+                            <li className={selectedNav == "Contact" ? "text-blue-700 font-semibold  border-b-2 border-b-blue-700 py-2  dark:text-blue-400 dark:border-b-blue-400" : " rounded-md py-2 w-full "}><Link className='w-full flex h-full' key="contact" href="/contact">Contact</Link></li>
 
 
                         </ul>
@@ -92,14 +93,17 @@ export default function Navbar(props: typeTitle) {
 
                 </div>
 
-                <div className=' md:ml-8 px-4 py-2 order-2 md:order-1 h-full hover:bg-slate-200 rounded-md cursor-default dark:hover:bg-slate-700'>
-                    <p className='poppins-regular'>{title}</p>
+                <div className=' md:ml-8 px-4 py-2 order-2 md:order-1 h-full relative rounded-md cursor-default dark:hover:bg-slate-700'>
+                    <p className='Virgil'>{title}</p>
+                    <div className='absolute w-12 bg-blue-200 dark:bg-blue-900 rounded-md top-2 -rotate-6 left-10 h-6 -z-10'>
+
+                    </div>
                 </div>
                 {/* set theme */}
                 <div onClick={() => {
                     setTheme(theme === 'dark' ? 'light' : 'dark')
                 }} className='mr-4 md:mr-8 px-4 py-2 order-3 md:hover:bg-slate-200 rounded-md cursor-default md:dark:hover:bg-slate-700'>
-                    <Image className='dark:fill-white' width={25} height={25} src={mode} alt='burger' />
+                    <Image className='dark:fill-white' width={18} height={18} src={mode} alt='burger' />
                 </div>
             </div>
         </>
