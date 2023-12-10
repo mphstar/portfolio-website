@@ -38,13 +38,19 @@ const ContentAchievement = ({
         <h1 className="font-poppins-semibold mt-4">{judul}</h1>
         <p className="">{penerbit}</p>
         <div className="flex flex-row gap-2 flex-wrap mt-4">
-          {keahlian.map((item: any) => (
-            <div className="border-2 px-2 py-1 text-xs rounded-md dark:border-slate-700">{item}</div>
+          {keahlian.map((item: any, index: number) => (
+            <div
+              key={index}
+              className="border-2 px-2 py-1 text-xs rounded-md dark:border-slate-700"
+            >
+              {item}
+            </div>
           ))}
         </div>
         <div className="flex flex-row flex-wrap gap-3">
-          {foto.map((item: any) => (
+          {foto.map((item: any, index: number) => (
             <Image
+              key={index}
               src={item}
               alt="sertif"
               width={500}

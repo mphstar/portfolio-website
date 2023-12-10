@@ -50,18 +50,13 @@ export default function achievements() {
           <ContentAchievement
             profile="/assets/foto.jpg"
             tanggal={"November 2022 - November 2025"}
-            judul={
-              "Junior Mobile Programmer"
-            }
+            judul={"Junior Mobile Programmer"}
             penerbit={"Badan Nasional Sertifikasi Profesi (BNSP)"}
-            keahlian={[
-              "Mobile Application Development",
-              "Flutter"
-            ]}
+            keahlian={["Mobile Application Development", "Flutter"]}
             foto={["/assets/sertif/junior_mobile.jfif"]}
           />
 
-<ContentAchievement
+          <ContentAchievement
             profile="/assets/foto.jpg"
             tanggal={"June 2022"}
             judul={
@@ -70,9 +65,12 @@ export default function achievements() {
             penerbit={"Politeknik Negeri Jember"}
             keahlian={[
               "Desktop Application Development",
-              "Database Administration"
+              "Database Administration",
             ]}
-            foto={["/assets/sertif/gandrung1.jpg", "/assets/sertif/gandrung2.jpg"]}
+            foto={[
+              "/assets/sertif/gandrung1.jpg",
+              "/assets/sertif/gandrung2.jpg",
+            ]}
           />
         </div>
       </div>
