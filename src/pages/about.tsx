@@ -5,7 +5,7 @@ import Education from "@/components/Education";
 import SpotifyContext from "@/utils/SpotifyContext";
 import { Tooltip } from "react-tooltip";
 
-const about = () => {
+const About = () => {
   const { data } = useContext<any>(SpotifyContext);
   // const { data } = spotify;
 
@@ -283,4 +283,4 @@ const about = () => {
   );
 };
 
-export default about;
+export default About;
