@@ -1,4 +1,4 @@
-import { SpotifyContext } from "@/utils/SpotifyContext";
+
 import { Html, Head, Main, NextScript } from "next/document";
 
 export default function Document() {

@@ -5,7 +5,6 @@ import { AnimatePresence, domAnimation, LazyMotion, m } from "framer-motion";
 import { Router, useRouter } from "next/router";
 import { variants } from "./anim";
 import Footer from "./Footer";
-import { SpotifyContext } from "@/utils/SpotifyContext";
 
 interface templateType {
   children: ReactNode;

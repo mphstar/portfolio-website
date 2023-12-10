@@ -2,12 +2,12 @@ import React, { useContext } from "react";
 import Main from "@/components/Template";
 import Image from "next/image";
 import Education from "@/components/Education";
-import { SpotifyContext, useSpotify } from "@/utils/SpotifyContext";
+import SpotifyContext from "@/utils/SpotifyContext";
 import { Tooltip } from "react-tooltip";
 
 const about = () => {
-  const spotify = useSpotify();
-  const { data } = spotify;
+  const { data } = useContext<any>(SpotifyContext);
+  // const { data } = spotify;
 
   // console.log(data);
 

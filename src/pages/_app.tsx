@@ -4,7 +4,7 @@ import { ThemeProvider } from "next-themes";
 import type { AppProps } from "next/app";
 import { DefaultSeo } from "next-seo";
 import useSWR from "swr";
-import { SpotifyContext } from "@/utils/SpotifyContext";
+import SpotifyContext from "@/utils/SpotifyContext";
 
 export default function App({ Component, pageProps }: AppProps) {
   const fetcher = (url: RequestInfo | URL) => fetch(url).then((r) => r.json());
