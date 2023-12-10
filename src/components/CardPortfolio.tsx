@@ -4,7 +4,7 @@ import React from "react";
 
 const CardPortfolio = (data: DataInterface) => {
   return (
-    <div className="w-fit h-64 flex flex-col border-2 group dark:border-slate-500 rounded-lg overflow-hidden">
+    <div className="w-full h-64 flex flex-col border-2 group dark:border-slate-500 rounded-lg overflow-hidden">
       <Image
         src={data.data.image}
         alt="image"
