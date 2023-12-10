@@ -24,7 +24,7 @@ export default function Index() {
 
   const [color, setColor] = useState("rgba(99, 102, 241, 0.6)");
   return (
-    <Main selectedNav="Home" title="Mphstar | Home">
+    <Main selectedNav="Home" title="Hi, I'm Bintang | @Mphstar">
       <ReactSketchCanvas
         ref={canvasRef}
         style={{ zIndex: 5 }}
