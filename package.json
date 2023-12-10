@@ -28,6 +28,7 @@
     "react-icons": "^4.8.0",
     "react-sketch-canvas": "^6.2.0",
     "react-social-icons": "^6.7.0",
+    "react-tooltip": "^5.25.0",
     "swr": "^2.1.1",
     "tailwind": "^4.0.0",
     "typescript": "5.0.2"

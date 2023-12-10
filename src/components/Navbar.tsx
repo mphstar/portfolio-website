@@ -2,7 +2,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React, { useEffect, useLayoutEffect, useState } from 'react'
 import { useTheme } from 'next-themes'
-import useSWR from 'swr';
+
+import { useSpotify } from '@/utils/SpotifyContext';
 
 interface typeTitle {
     title: string
@@ -13,8 +14,10 @@ interface typeTitle {
 
 export default function Navbar(props: typeTitle) {
 
-    const fetcher = (url: RequestInfo | URL) => fetch(url).then((r) => r.json());
-    const { data } = useSWR('/api/spotify', fetcher);
+    
+
+    const spotify = useSpotify();
+  const { data } = spotify
 
     const { title, selectedNav } = props
     const { theme, setTheme } = useTheme()
@@ -22,6 +25,7 @@ export default function Navbar(props: typeTitle) {
     const [statusDrawer, setStatus] = useState(false)
     const [icon, setIcon] = useState('/assets/icons/menu-white.png')
     const [mode, setMode] = useState('/assets/icons/sun.png')
+    
 
 
     useEffect(() => {
@@ -48,7 +52,7 @@ export default function Navbar(props: typeTitle) {
     return (
         <>
             <div onClick={(prev) => setStatus(!prev)} className={`bg-black transition  z-[101] h-screen w-screen fixed bottom-0 ${statusDrawer ? "opacity-60 pointer-events-auto" : "opacity-0 pointer-events-none"}`}></div>
-            <div className={`flex justify-between fixed duration-300 w-full ${!statusDrawer ? 'bg-bg-light dark:bg-bg-dark' : ''} items-center z-[101] py-4`}>
+            <div className={`flex justify-between fixed duration-300 w-full ${!statusDrawer ? 'bg-bg-light dark:bg-bg-dark' : ''} items-center z-[101] py-1`}>
                 {/* burger */}
                 <div onClick={() => {
                     setStatus(!statusDrawer)
@@ -62,12 +66,13 @@ export default function Navbar(props: typeTitle) {
                         <ul className={`flex flex-col mt-2 md:mt-0 md:flex-row md:gap-4`}>
                             <div className='flex flex-col h-fit w-full mt-8   md:hidden'>
                                 <div className="flex flex-col h-fit justify-start items-start overflow-hidden w-40">
-                                    <Image src={'/profile.png'} alt="Profile" width={30} height={30} className='rounded-full w-24 overflow-hidden h-24' />
+                                    <Image src={'/assets/foto.jpg'} alt="Profile" width={30} height={30} className='rounded-full w-24 overflow-hidden h-24' />
                                     {/* <p className='poppins-semibold text-blue-900 text-sm mt-2 dark:text-white'>@Mphstar._</p> */}
 
                                 </div>
                             </div>
-                            <p className='poppins-bold text-sm overflow-hidden md:hidden w-40 mt-8 mb-2 text-gray-400'>Menu</p>
+                            <p className='font-poppins-semibold text-sm overflow-hidden md:hidden w-full mt-4 text-gray-800 dark:text-gray-50'>Bintang Malindo Eka Putra</p>
+                            <p className='font-poppins-regular text-xs overflow-hidden md:hidden w-full mb-3 text-gray-400'>Website & Mobile Developer</p>
                             {/* <div className='h-[1px] w-full bg-gray-300 dark:bg-gray-600 mb-4 md:hidden'></div> */}
                             <li className={selectedNav == "Home" ? "text-blue-700 font-semibold border-b-2 border-b-blue-700 py-2  dark:text-blue-400 dark:border-b-blue-400" : " rounded-md py-2 w-full "}><Link className='w-full flex h-full' key="home" href="/">Home</Link></li>
                             <li className={selectedNav == "Portfolio" ? "text-blue-700 font-semibold  border-b-2 border-b-blue-700 py-2  dark:text-blue-400 dark:border-b-blue-400" : " rounded-md py-2 w-full "}><Link className='w-ful flex h-full' key="portofolio" href="/portofolio">Portofolio</Link></li>

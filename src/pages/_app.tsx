@@ -3,8 +3,13 @@ import { AnimatePresence } from "framer-motion";
 import { ThemeProvider } from "next-themes";
 import type { AppProps } from "next/app";
 import { DefaultSeo } from "next-seo";
+import useSWR from "swr";
+import { SpotifyContext } from "@/utils/SpotifyContext";
 
 export default function App({ Component, pageProps }: AppProps) {
+  const fetcher = (url: RequestInfo | URL) => fetch(url).then((r) => r.json());
+  const { data } = useSWR("/api/spotify", fetcher);
+
   return (
     <ThemeProvider defaultTheme="dark" attribute="class">
       <DefaultSeo
@@ -12,7 +17,8 @@ export default function App({ Component, pageProps }: AppProps) {
         defaultTitle="Bintang Malindo Eka Putra - Student and Junior Fullstack Developer"
         titleTemplate={`%s · Mphstar.tech`}
         openGraph={{
-          title: "Bintang Malindo Eka Putra - Student and Junior Fullstack Developer",
+          title:
+            "Bintang Malindo Eka Putra - Student and Junior Fullstack Developer",
           description: "Personal Website Porfolio of Bintang Malindo Eka Putra",
           images: [
             {
@@ -30,7 +36,9 @@ export default function App({ Component, pageProps }: AppProps) {
         initial={false}
         onExitComplete={() => window.scrollTo(0, 0)}
       >
-        <Component {...pageProps} />
+        <SpotifyContext.Provider value={{ data }}>
+          <Component {...pageProps} />
+        </SpotifyContext.Provider>
       </AnimatePresence>
     </ThemeProvider>
   );
