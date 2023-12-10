@@ -29,7 +29,7 @@ export default function Index() {
         ref={canvasRef}
         style={{ zIndex: 5 }}
         canvasColor="transparent"
-        className="bg-transparent absolute top-0 left-0 w-full"
+        className="bg-transparent absolute top-0 left-0 w-full cursor-pencil dark:cursor-pencil-dark"
         strokeWidth={5}
         strokeColor={color}
       />
