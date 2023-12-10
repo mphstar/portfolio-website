@@ -72,6 +72,55 @@ export default function achievements() {
               "/assets/sertif/gandrung2.jpg",
             ]}
           />
+
+          <ContentAchievement
+            profile="/assets/foto.jpg"
+            tanggal={"January 2022"}
+            judul={
+              "Juara 2 Aplikasi Terbaik dalam Acara TIF Exhibition Semester Ganjil 2021/2022"
+            }
+            penerbit={"Politeknik Negeri Jember"}
+            keahlian={[
+              "Leader Team",
+              "Desktop Application Development",
+              "Database Administration",
+              "User Interface Design",
+            ]}
+            foto={[
+              "/assets/sertif/tokosa.jpg",
+            ]}
+          />
+          <ContentAchievement
+            profile="/assets/foto.jpg"
+            tanggal={"June 2021"}
+            judul={
+              "Peserta IT Network System Administration Lomba Kompetensi Siswa (LKS) SMK Tingkat Provinsi Jawa Timur"
+            }
+            penerbit={"Dinas Pendidikan Provinsi Jawa Timur"}
+            keahlian={[
+              "Server Administration",
+              "Network Administration",
+            ]}
+            foto={[
+              "/assets/sertif/lksprov.jpeg",
+            ]}
+          />
+          <ContentAchievement
+            profile="/assets/foto.jpg"
+            tanggal={"November 2020"}
+            judul={
+              "Juara 3 Lomba IT (Jaringan) Tingkat SMK Se-Jawa Timur"
+            }
+            penerbit={"Politeknik Negeri Jember"}
+            keahlian={[
+              "Server Administration",
+              "Network Administration",
+            ]}
+            foto={[
+              "/assets/sertif/lombait.jpeg",
+            ]}
+          />
+          
         </div>
       </div>
     </Main>
