@@ -1,8 +1,8 @@
 import Main from "@/components/Template";
 import Lottie from "lottie-react";
-import React from "react";
-import animationData from "../components/lottie/maintenance.json";
-import Image from "next/image";
+  import React from "react";
+  import animationData from "../components/lottie/maintenance.json";
+  import Image from "next/image";
 import CardPortfolio from "@/components/CardPortfolio";
 import data from "../models/data_portfolio.json";
 
