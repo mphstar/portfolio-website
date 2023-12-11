@@ -1,42 +1,74 @@
 [
   {
-    "image": "https://media.licdn.com/dms/image/sync/D5627AQGSpvUycF-Zvw/articleshare-shrink_800/0/1701148117745?e=1701964800&v=beta&t=x1g2lrax5PHDh-sGUpBxawS6BhUgvxCqg_iw2mPyU7M",
+    "image": "/assets/projects/tokosa.png",
     "title": "Toko SA",
-    "deskripsi": "Aplikasi Point of Sale Berbasis Desktop untuk mempermudah pengelolaan penjualan barang.",
-    "github": null,
+    "deskripsi": "Desktop-based Point of Sale application to make it easier to manage the sale of goods.",
+    "github": "https://github.com/mphstar/toko-sa.git",
     "build": null,
     "redirect": null
   },
   {
-    "image": "https://media.licdn.com/dms/image/D562DAQGa-hH7XcL25Q/profile-treasury-document-cover-images_480/0/1701147782903?e=1701939600&v=beta&t=74Oe-ZpDoQhNKmPHBOvjI3PdhZttdRXL3ZWz4bkv2Oo",
+    "image": "/assets/projects/sigandrung.png",
     "title": "Sistem Informasi Gandrung",
-    "deskripsi": "Merancang dan mengembangkan sistem Point of Sale restoran Mie Gandrung berbasis desktop dengan menggunakan bahasa pemrograman Java.",
+    "deskripsi": "Design and develop a desktop-based Mie Gandrung restaurant Point of Sale system.",
     "github": null,
     "build": null,
-    "redirect": null
+    "redirect": "https://youtu.be/AMyqNpLCHOQ"
   },
   {
-    "image": "https://media.licdn.com/dms/image/D562DAQF8OtKokZ271w/profile-treasury-image-shrink_1280_1280/0/1701332381935?e=1701961200&v=beta&t=QVZlLFQG-sWw03autv7XXXzwnly5yEGEoVEpFxQt2QI",
+    "image": "/assets/projects/wgoptical.png",
     "title": "WG Optical",
-    "deskripsi": "Aplikasi Point of Sales berbasis website dan mobile untuk butik Tiara di Banyuwangi.",
-    "github": null,
+    "deskripsi": "ERP system for optics with a home service system equipped with transaction, inventory, finance, personnel and distribution modules.",
+    "github": "https://github.com/mphstar/wg-optical.git",
     "build": null,
-    "redirect": null
+    "redirect": "https://wgoptical.mphstar.my.id/"
   },
   {
-    "image": "https://media.licdn.com/dms/image/D562DAQE-JkM4ErllWQ/profile-treasury-image-shrink_1280_1280/0/1701270487231?e=1701964800&v=beta&t=fWmkTB2z34f0AEad90-E8LaJaAka6A7NsD-4jXpoX_E",
+    "image": "/assets/projects/tijara.png",
     "title": "Tijara Store",
-    "deskripsi": "Aplikasi Point of Sales berbasis website dan mobile untuk butik Tiara di Banyuwangi.",
+    "deskripsi": "Website and mobile based Point of Sales application for Tijara boutique in Banyuwangi.",
+    "github": "https://github.com/mphstar/tijara-store-website.git",
+    "build": null,
+    "redirect": "https://tijara.mphstar.my.id/"
+  },
+  {
+    "image": "/assets/projects/gacha.png",
+    "title": "Gacha Anime",
+    "deskripsi": "Simple app for anime character gacha.",
+    "github": "https://github.com/mphstar/xrlsnime.git",
+    "build": null,
+    "redirect": "https://xrlsnime.vercel.app/"
+  },
+  {
+    "image": "/assets/projects/ehealth.png",
+    "title": "E-Health",
+    "deskripsi": "The E-Health system is a health facility owned by the Jember Regency Government which has several features including online queue registration specifically for outpatient care at Puskesmas and Hospitals owned by the Jember Regency government, information on the distribution of Health Facility locations, complaint services, queue monitoring, and information. ",
     "github": null,
+    "build": null,
+    "redirect": "https://ehealth.mphstar.my.id/"
+  },
+  {
+    "image": "/assets/projects/kiosk.png",
+    "title": "Gesture Recognition Technology based Kiosk",
+    "deskripsi": "Point of Sale website with the addition of Gesture Recognition to be able to control just by moving your hand on the camera sensor. After making a transaction, the transaction note will be printed automatically. Has admin access rights that can add, change, delete items displayed, as well as view the entire transaction history.",
+    "github": "https://github.com/mphstar/gesture-recognition-kiosk.git",
     "build": null,
     "redirect": null
   },
   {
-    "image": "https://media.licdn.com/dms/image/D562DAQHTDtNeJHjZUQ/profile-treasury-image-shrink_800_800/0/1701271163268?e=1701964800&v=beta&t=WpEX1ljeHFU74Jff_yhbmQVfNzQXyo0NShrClfSjd9c",
-    "title": "Gesture Recogniton based Kiosk",
-    "deskripsi": "Website Point of Sale dengan tambahan Gesture Recognition untuk dapat melakukan control hanya dengan menggerakan tangan pada sensor kamera. Setelah melakukan transaksi, nota transaksi akan langsung dicetak secara otomatis. Memiliki 1 hak akses admin yang dapat melakukan tambah, ubah, hapus barang yang ditampilkan, serta melihat seluruh riwayat transaksi. ",
-    "github": null,
+    "image": "/assets/projects/pdp.png",
+    "title": "PDP Jember",
+    "deskripsi": "Decision support system for selecting plants based on soil content based on a Geographic Information System using the Learning Vector Quantization method.",
+    "github": "https://github.com/mphstar/pdp-gis.git",
     "build": null,
-    "redirect": null
+    "redirect": "https://pdp-jember.com"
+  },
+  {
+    "image": "/assets/projects/cf.png",
+    "title": "CF Warehouse Polije",
+    "deskripsi": "Dataset storage platform that allows users to upload, view, and download datasets in various formats.",
+    "github": "https://github.com/mphstar/cf-warehouse-polije.git",
+    "build": null,
+    "redirect": "https://cfwarehouse.wsmif.id/"
   }
 ]

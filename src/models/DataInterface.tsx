@@ -2,9 +2,9 @@ interface data {
   image: string;
   title: String;
   deskripsi: String;
-  github: null;
+  github: string | null | undefined;
   build: null;
-  redirect: null;
+  redirect: string | null | undefined;
 }
 
 interface DataInterface {
