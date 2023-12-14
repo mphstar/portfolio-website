@@ -66,7 +66,7 @@ const About = () => {
             <p>
               Also, you can{" "}
               <a
-                href="%"
+                href="https://drive.google.com/drive/folders/1u6Kxyd2lYPdmtzbMCBp9fzd5HNbjuCEW?usp=drive_link"
                 className="underline"
                 rel="noopener noreferrer"
                 target="_blank"

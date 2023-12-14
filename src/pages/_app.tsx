@@ -13,22 +13,21 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider defaultTheme="dark" attribute="class">
       <DefaultSeo
-        description={"Personal Website Porfolio of Bintang Malindo Eka Putra"}
-        defaultTitle="Bintang Malindo Eka Putra - Student and Junior Fullstack Developer"
-        titleTemplate={`%s · Mphstar.tech`}
+        title="Bintang Malindo Eka Putra - Junior Fullstack Developer"
+        description={
+          "I am Bintang Malindo Eka Putra, a 5th semester Informatics Engineering student from Jember State Polytechnic. I have a strong interest in Website and Mobile application development."
+        }
+        defaultTitle="Bintang Malindo Eka Putra - Junior Fullstack Developer"
+        titleTemplate={`%s · mphstar.tech`}
         openGraph={{
-          title:
-            "Bintang Malindo Eka Putra - Student and Junior Fullstack Developer",
-          description: "Personal Website Porfolio of Bintang Malindo Eka Putra",
+          title: "Bintang Malindo Eka Putra - Junior Fullstack Developer",
+          description:
+            "I am Bintang Malindo Eka Putra, a 5th semester Informatics Engineering student from Jember State Polytechnic. I have a strong interest in Website and Mobile application development.",
           images: [
             {
-              url: `https://mphstar.tech/image_dashboard.jpg`,
+              url: `https://mphstar.tech/assets/foto.jpg`,
             },
           ],
-        }}
-        twitter={{
-          handle: "@mphstar._",
-          cardType: "summary_large_image",
         }}
       />
       <AnimatePresence
