@@ -5,6 +5,7 @@ import animationData from "../components/lottie/maintenance.json";
 import Image from "next/image";
 import ContentAchievement from "@/components/ContentAchievement";
 
+
 export default function achievements() {
   return (
     <Main selectedNav="Achievements" title="Achievements | @Mphstar">
@@ -28,6 +29,7 @@ export default function achievements() {
               "User Interface Design",
             ]}
             foto={["/assets/sertif/knu.jfif"]}
+            key={1}
           />
 
           <ContentAchievement
@@ -45,6 +47,7 @@ export default function achievements() {
               "User Interface Design",
             ]}
             foto={["/assets/sertif/ehealth.jpg"]}
+            key={2}
           />
 
           <ContentAchievement
@@ -54,6 +57,7 @@ export default function achievements() {
             penerbit={"Badan Nasional Sertifikasi Profesi (BNSP)"}
             keahlian={["Mobile Application Development", "Flutter"]}
             foto={["/assets/sertif/junior_mobile.jfif"]}
+            key={3}
           />
 
           <ContentAchievement
@@ -71,6 +75,7 @@ export default function achievements() {
               "/assets/sertif/gandrung1.jpg",
               "/assets/sertif/gandrung2.jpg",
             ]}
+            key={4}
           />
 
           <ContentAchievement
@@ -89,6 +94,7 @@ export default function achievements() {
             foto={[
               "/assets/sertif/tokosa.jpg",
             ]}
+            key={5}
           />
           <ContentAchievement
             profile="/assets/foto.jpg"
@@ -104,6 +110,7 @@ export default function achievements() {
             foto={[
               "/assets/sertif/lksprov.jpeg",
             ]}
+            key={6}
           />
           <ContentAchievement
             profile="/assets/foto.jpg"
@@ -119,6 +126,7 @@ export default function achievements() {
             foto={[
               "/assets/sertif/lombait.jpeg",
             ]}
+            key={7}
           />
           
         </div>

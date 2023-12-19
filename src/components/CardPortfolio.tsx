@@ -1,10 +1,16 @@
 import DataInterface from "@/models/DataInterface";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const CardPortfolio = (data: DataInterface) => {
+  useEffect(() => {
+    AOS.init();
+  }, [])
+
   return (
-    <div className="w-full h-64 flex flex-col border-2 group dark:border-slate-500 rounded-lg overflow-hidden">
+    <div data-aos="zoom-in" className="w-full h-64 flex flex-col border-2 group dark:border-slate-500 rounded-lg overflow-hidden">
       <Image
         src={data.data.image}
         alt="image"

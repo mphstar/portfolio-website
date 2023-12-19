@@ -1,6 +1,8 @@
 import Image from "next/image";
 
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const ContentAchievement = ({
   profile,
@@ -17,8 +19,12 @@ const ContentAchievement = ({
   keahlian: any;
   foto: any;
 }) => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
-    <div className="flex flex-row w-full gap-3">
+    <div data-aos="zoom-in" className="flex flex-row w-full gap-3">
       <div className="flex flex-col gap-3 items-center">
         <Image
           src={profile}
