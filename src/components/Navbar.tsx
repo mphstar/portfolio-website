@@ -188,8 +188,7 @@ export default function Navbar(props: typeTitle) {
         </div>
 
         <div className=" md:ml-8 px-4 py-2 order-2 md:order-1 h-full relative rounded-md cursor-default dark:hover:bg-slate-700">
-          <p className="Virgil">{title}</p>
-          <div className="absolute w-12 bg-blue-200 dark:bg-blue-900 rounded-md top-2 -rotate-6 left-10 h-6 -z-10"></div>
+          <p className="font-virgil">{title}</p>
         </div>
         {/* set theme */}
         <div
