@@ -31,7 +31,7 @@ export default function Template(props: templateType) {
           animate="enter"
           exit="exit"
           transition={{ ease: "easeInOut", duration: 0.5 }}
-          className={"flex flex-col h-full min-h-screen flex-grow"}
+          className={"flex flex-col h-full min-h-[100dvh] flex-grow"}
         >
           <div className="flex flex-col container h-full flex-1 mx-auto max-w-[700px] px-4">
             {children}

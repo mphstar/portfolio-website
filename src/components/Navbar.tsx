@@ -41,7 +41,7 @@ export default function Navbar(props: typeTitle) {
     <>
       <div
         onClick={(prev) => setStatus(!prev)}
-        className={`bg-black transition  z-[101] h-screen w-screen fixed bottom-0 ${
+        className={`bg-black transition  z-[101] h-[100dvh] w-screen fixed bottom-0 ${
           statusDrawer
             ? "opacity-60 pointer-events-auto"
             : "opacity-0 pointer-events-none"
