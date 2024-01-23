@@ -10,19 +10,19 @@ const CardPortfolio = (data: DataInterface) => {
   }, [])
 
   return (
-    <div data-aos="zoom-in" className="w-full h-64 flex flex-col border-2 group dark:border-slate-500 rounded-lg overflow-hidden">
+    <div data-aos="zoom-in" className="w-full h-full hover:scale-110 flex flex-col border-2 group dark:border-slate-500 rounded-lg overflow-hidden">
       <Image
         src={data.data.image}
         alt="image"
         width={2048}
         height={2048}
-        className="w-full h-24 object-cover group-hover:scale-110 duration-300 ease-in-out"
+        className="w-full object-cover h-60 group-hover:scale-110 duration-300 ease-in-out"
       />
       <div className="flex flex-col flex-1 px-2">
         <p className="font-semibold line-clamp-2 mt-2 ">{data.data.title}</p>
         <p className="text-xs line-clamp-3 mt-1">{data.data.deskripsi}</p>
       </div>
-      <div className="flex flex-row px-4 pb-3 overflow-hidden">
+      <div className="flex flex-row px-4 pb-3 mt-4 overflow-hidden">
         <div className="flex flex-1 flex-row"></div>
         <div className="flex gap-2 w-fit">
           {data.data.github ? (

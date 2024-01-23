@@ -92,7 +92,7 @@ export default function Navbar(props: typeTitle) {
               <li
                 className={
                   selectedNav == "Home"
-                    ? "text-blue-700 font-semibold border-b-2 border-b-blue-700 py-2  dark:text-blue-400 dark:border-b-blue-400"
+                    ? "text-blue-700 font-semibold border-b-2 border-b-blue-700 py-2  dark:text-blue-400 dark:border-b-blue-500"
                     : " rounded-md py-2 w-full "
                 }
               >
@@ -103,7 +103,7 @@ export default function Navbar(props: typeTitle) {
               <li
                 className={
                   selectedNav == "Portfolio"
-                    ? "text-blue-700 font-semibold  border-b-2 border-b-blue-700 py-2  dark:text-blue-400 dark:border-b-blue-400"
+                    ? "text-blue-700 font-semibold  border-b-2 border-b-blue-700 py-2  dark:text-blue-400 dark:border-b-blue-500"
                     : " rounded-md py-2 w-full "
                 }
               >
@@ -118,7 +118,7 @@ export default function Navbar(props: typeTitle) {
               <li
                 className={
                   selectedNav == "Achievements"
-                    ? "text-blue-700 font-semibold  border-b-2 border-b-blue-700 py-2  dark:text-blue-400 dark:border-b-blue-400"
+                    ? "text-blue-700 font-semibold  border-b-2 border-b-blue-700 py-2  dark:text-blue-400 dark:border-b-blue-500"
                     : " rounded-md py-2 w-full "
                 }
               >
@@ -133,7 +133,7 @@ export default function Navbar(props: typeTitle) {
               <li
                 className={
                   selectedNav == "About"
-                    ? "text-blue-700 font-semibold  border-b-2 border-b-blue-700 py-2  dark:text-blue-400 dark:border-b-blue-400"
+                    ? "text-blue-700 font-semibold  border-b-2 border-b-blue-700 py-2  dark:text-blue-400 dark:border-b-blue-500"
                     : " rounded-md py-2 w-full "
                 }
               >
@@ -144,7 +144,7 @@ export default function Navbar(props: typeTitle) {
               <li
                 className={
                   selectedNav == "Contact"
-                    ? "text-blue-700 font-semibold  border-b-2 border-b-blue-700 py-2  dark:text-blue-400 dark:border-b-blue-400"
+                    ? "text-blue-700 font-semibold  border-b-2 border-b-blue-700 py-2  dark:text-blue-400 dark:border-b-blue-500"
                     : " rounded-md py-2 w-full "
                 }
               >
