@@ -3,14 +3,19 @@ import Image from "next/image";
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import BadgeTech from "@/utils/BadgeTech";
+import SelectionTech from "@/utils/SelectionTech";
 
 const CardPortfolio = (data: DataInterface) => {
   useEffect(() => {
     AOS.init();
-  }, [])
+  }, []);
 
   return (
-    <div data-aos="zoom-in" className="w-full h-full hover:scale-110 flex flex-col border-2 group dark:border-slate-500 rounded-lg overflow-hidden">
+    <div
+      data-aos="zoom-in"
+      className="w-full h-full hover:scale-110 flex flex-col border-2 group dark:border-slate-500 rounded-lg overflow-hidden"
+    >
       <Image
         src={data.data.image}
         alt="image"
@@ -21,7 +26,13 @@ const CardPortfolio = (data: DataInterface) => {
       <div className="flex flex-col flex-1 px-2">
         <p className="font-semibold line-clamp-2 mt-2 ">{data.data.title}</p>
         <p className="text-xs line-clamp-3 mt-1">{data.data.deskripsi}</p>
+        <div className="flex flex-row gap-2 flex-shrink flex-wrap px-2 mt-3">
+          {data.data.build?.map((item, index) => {
+            return <BadgeTech key={index} selection={item} />;
+          })}
+        </div>
       </div>
+
       <div className="flex flex-row px-4 pb-3 mt-4 overflow-hidden">
         <div className="flex flex-1 flex-row"></div>
         <div className="flex gap-2 w-fit">

@@ -41,9 +41,9 @@ export default function Index() {
             src="/image_dashboard.png"
             alt="profile"
           />
-        <div className="order-2  flex flex-col flex-1">
+        <div className="order-2  flex flex-col">
           <div className="mt-4">
-            <p className="text-center md:text-left Virgil text-3xl">
+            <p className="text-center md:text-left Virgil text-3xl md:text-5xl">
               <b>Hi.</b> I'm Bintang,👋
             </p>
           </div>
