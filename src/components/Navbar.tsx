@@ -66,7 +66,7 @@ export default function Navbar(props: typeTitle) {
             statusDrawer
               ? "duration-700 translate-x-0 px-4"
               : "-translate-x-[250px] md:translate-x-0 duration-700"
-          } w-60 md:duration-[0ms]  fixed top-0 h-screen z-[200] md:h-fit md:static md:order-2 md:flex md:w-fit bg-bg-light dark:bg-bg-dark md:bg-transparent dark:md:bg-transparent overflow-x-hidden`}
+          } w-60 md:duration-[0ms]  fixed top-0 h-[100dvh] z-[200] md:h-fit md:static md:order-2 md:flex md:w-fit bg-bg-light dark:bg-bg-dark md:bg-transparent dark:md:bg-transparent overflow-x-hidden`}
         >
           <div className="flex flex-col justify-between h-full overflow-y-auto">
             <ul className={`flex flex-col mt-2 md:mt-0 md:flex-row md:gap-4`}>
