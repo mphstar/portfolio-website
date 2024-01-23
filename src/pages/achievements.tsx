@@ -17,6 +17,20 @@ export default function achievements() {
         <div className="flex flex-col h-full gap-3">
           <ContentAchievement
             profile="/assets/foto.jpg"
+            tanggal={"January 2024 - January 2026"}
+            judul={
+              "Alibaba Cloud Certified Developers"
+            }
+            penerbit={"Alibaba Cloud"}
+            keahlian={[
+              "Front-End Development",
+              "Back-End Development",
+            ]}
+            foto={["/assets/sertif/alibaba.jfif"]}
+            
+          />
+          <ContentAchievement
+            profile="/assets/foto.jpg"
             tanggal={"October 2023"}
             judul={
               "Certificate of Completion 2023 World Friends Korea IT Volunteer Program"
@@ -29,7 +43,7 @@ export default function achievements() {
               "User Interface Design",
             ]}
             foto={["/assets/sertif/knu.jfif"]}
-            key={1}
+            
           />
 
           <ContentAchievement
@@ -47,7 +61,7 @@ export default function achievements() {
               "User Interface Design",
             ]}
             foto={["/assets/sertif/ehealth.jpg"]}
-            key={2}
+            
           />
 
           <ContentAchievement
@@ -57,7 +71,6 @@ export default function achievements() {
             penerbit={"Badan Nasional Sertifikasi Profesi (BNSP)"}
             keahlian={["Mobile Application Development", "Flutter"]}
             foto={["/assets/sertif/junior_mobile.jfif"]}
-            key={3}
           />
 
           <ContentAchievement
@@ -75,7 +88,6 @@ export default function achievements() {
               "/assets/sertif/gandrung1.jpg",
               "/assets/sertif/gandrung2.jpg",
             ]}
-            key={4}
           />
 
           <ContentAchievement
@@ -94,7 +106,6 @@ export default function achievements() {
             foto={[
               "/assets/sertif/tokosa.jpg",
             ]}
-            key={5}
           />
           <ContentAchievement
             profile="/assets/foto.jpg"
@@ -110,7 +121,6 @@ export default function achievements() {
             foto={[
               "/assets/sertif/lksprov.jpeg",
             ]}
-            key={6}
           />
           <ContentAchievement
             profile="/assets/foto.jpg"
@@ -126,7 +136,6 @@ export default function achievements() {
             foto={[
               "/assets/sertif/lombait.jpeg",
             ]}
-            key={7}
           />
           
         </div>
