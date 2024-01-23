@@ -26,7 +26,7 @@ const CardPortfolio = (data: DataInterface) => {
       <div className="flex flex-col flex-1 px-2">
         <p className="font-semibold line-clamp-2 mt-2 ">{data.data.title}</p>
         <p className="text-xs line-clamp-3 mt-1">{data.data.deskripsi}</p>
-        <div className="flex flex-row gap-2 flex-shrink flex-wrap px-2 mt-3">
+        <div className="flex flex-row gap-2 flex-shrink flex-wrap mt-3">
           {data.data.build?.map((item, index) => {
             return <BadgeTech key={index} selection={item} />;
           })}
