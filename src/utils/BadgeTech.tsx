@@ -16,6 +16,18 @@ const BadgeTech = ({ selection }: { selection: SelectionTech }) => {
           Laravel
         </div>
       );
+    case SelectionTech.Flutter:
+      return (
+        <div className="px-3 py-1 bg-blue-500 text-white text-sm font-poppins-regular w-fit flex rounded-sm">
+          Flutter
+        </div>
+      );
+    case SelectionTech.ExpressJS:
+      return (
+        <div className="px-3 py-1 bg-orange-500 text-white text-sm font-poppins-regular w-fit flex rounded-sm">
+          Express JS
+        </div>
+      );
 
     case SelectionTech.Mysql:
       return (
@@ -28,6 +40,13 @@ const BadgeTech = ({ selection }: { selection: SelectionTech }) => {
       return (
         <div className="px-3 py-1 bg-purple-600 text-white text-sm font-poppins-regular w-fit flex rounded-sm">
           Kotlin
+        </div>
+      );
+
+    case SelectionTech.Java:
+      return (
+        <div className="px-3 py-1 bg-slate-600 text-white text-sm font-poppins-regular w-fit flex rounded-sm">
+          Java
         </div>
       );
 
@@ -58,21 +77,21 @@ const BadgeTech = ({ selection }: { selection: SelectionTech }) => {
         </div>
       );
 
-      case SelectionTech.Bootstrap:
+    case SelectionTech.Bootstrap:
       return (
         <div className="px-3 py-1 bg-indigo-600 text-white text-sm font-poppins-regular w-fit flex rounded-sm">
           Bootstrap
         </div>
       );
 
-      case SelectionTech.Netbeans:
+    case SelectionTech.Netbeans:
       return (
         <div className="px-3 py-1 bg-emerald-600 text-white text-sm font-poppins-regular w-fit flex rounded-sm">
           Netbeans
         </div>
       );
 
-      case SelectionTech.PHP:
+    case SelectionTech.PHP:
       return (
         <div className="px-3 py-1 bg-gray-600 text-white text-sm font-poppins-regular w-fit flex rounded-sm">
           PHP

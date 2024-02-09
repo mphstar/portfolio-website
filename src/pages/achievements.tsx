@@ -17,6 +17,48 @@ export default function achievements() {
         <div className="flex flex-col h-full gap-3">
           <ContentAchievement
             profile="/assets/foto.jpg"
+            tanggal={"February 2024 - February 2027"}
+            judul={
+              "Belajar Membuat Front-End Web untuk Pemula"
+            }
+            penerbit={"Dicoding Indonesia"}
+            keahlian={[
+              "Front-End Development",
+            ]}
+            foto={["/assets/sertif/sertif_frontend_pemula.jpg"]}
+
+          />
+
+          <ContentAchievement
+            profile="/assets/foto.jpg"
+            tanggal={"February 2024 - February 2027"}
+            judul={
+              "Belajar Dasar Pemrograman JavaScript"
+            }
+            penerbit={"Dicoding Indonesia"}
+            keahlian={[
+              "Pemrograman Dasar",
+            ]}
+            foto={["/assets/sertif/belajar_dasar_pemrograman_javascript.jpg"]}
+
+          />
+
+          <ContentAchievement
+            profile="/assets/foto.jpg"
+            tanggal={"February 2024 - February 2027"}
+            judul={
+              "Belajar Dasar Pemrograman Web"
+            }
+            penerbit={"Dicoding Indonesia"}
+            keahlian={[
+              "HTML Dasar",
+            ]}
+            foto={["/assets/sertif/belajar_dasar_pemrograman_web.jpg"]}
+
+          />
+
+          <ContentAchievement
+            profile="/assets/foto.jpg"
             tanggal={"January 2024 - January 2026"}
             judul={
               "Alibaba Cloud Certified Developers"
@@ -27,7 +69,7 @@ export default function achievements() {
               "Back-End Development",
             ]}
             foto={["/assets/sertif/alibaba.jfif"]}
-            
+
           />
           <ContentAchievement
             profile="/assets/foto.jpg"
@@ -43,7 +85,7 @@ export default function achievements() {
               "User Interface Design",
             ]}
             foto={["/assets/sertif/knu.jfif"]}
-            
+
           />
 
           <ContentAchievement
@@ -61,7 +103,7 @@ export default function achievements() {
               "User Interface Design",
             ]}
             foto={["/assets/sertif/ehealth.jpg"]}
-            
+
           />
 
           <ContentAchievement
@@ -137,7 +179,7 @@ export default function achievements() {
               "/assets/sertif/lombait.jpeg",
             ]}
           />
-          
+
         </div>
       </div>
     </Main>

@@ -7,7 +7,7 @@ const data = [
     deskripsi:
       "Desktop-based Point of Sale application to make it easier to manage the sale of goods.",
     github: "https://github.com/mphstar/toko-sa.git",
-    build: [SelectionTech.Netbeans, SelectionTech.Mysql],
+    build: [SelectionTech.Netbeans, SelectionTech.Mysql, SelectionTech.Java],
     redirect: null,
   },
   {
@@ -16,7 +16,7 @@ const data = [
     deskripsi:
       "Design and develop a desktop-based Mie Gandrung restaurant Point of Sale system.",
     github: null,
-    build: [SelectionTech.Netbeans, SelectionTech.Mysql],
+    build: [SelectionTech.Netbeans, SelectionTech.Mysql, SelectionTech.Java],
     redirect: "https://youtu.be/AMyqNpLCHOQ",
   },
   {
@@ -25,7 +25,7 @@ const data = [
     deskripsi:
       "ERP system for optics with a home service system equipped with transaction, inventory, finance, personnel and distribution modules.",
     github: "https://github.com/mphstar/wg-optical.git",
-    build: [SelectionTech.PHP, SelectionTech.Mysql, SelectionTech.Tailwindcss],
+    build: [SelectionTech.Flutter, SelectionTech.PHP, SelectionTech.Mysql, SelectionTech.Tailwindcss],
     redirect: "https://wgoptical.mphstar.my.id/",
   },
   {
@@ -38,6 +38,7 @@ const data = [
       SelectionTech.Laravel,
       SelectionTech.Mysql,
       SelectionTech.Tailwindcss,
+      SelectionTech.Java
     ],
     redirect: "https://tijara.mphstar.my.id/",
   },
@@ -68,7 +69,7 @@ const data = [
     deskripsi:
       "Point of Sale website with the addition of Gesture Recognition to be able to control just by moving your hand on the camera sensor. After making a transaction, the transaction note will be printed automatically. Has admin access rights that can add, change, delete items displayed, as well as view the entire transaction history.",
     github: "https://github.com/mphstar/gesture-recognition-kiosk.git",
-    build: [SelectionTech.React, SelectionTech.Mysql, SelectionTech.React],
+    build: [SelectionTech.React, SelectionTech.Mysql, SelectionTech.Python],
     redirect: null,
   },
   {
@@ -110,7 +111,7 @@ const data = [
     title: "Toxic Classification",
     deskripsi: "Detect comments that contain elements of abusive language",
     github: "https://github.com/mphstar/toxic-classification-naive-bayes.git",
-    build: [SelectionTech.Python],
+    build: [SelectionTech.Python, SelectionTech.ExpressJS],
     redirect: null,
   },
   {
@@ -146,6 +147,7 @@ const data = [
       "Website and Mobile Application faculty Report Universitas Jember",
     github: null,
     build: [
+      SelectionTech.Flutter,
       SelectionTech.Inertia,
       SelectionTech.Laravel,
       SelectionTech.Mysql,
@@ -153,6 +155,19 @@ const data = [
       SelectionTech.Tailwindcss,
     ],
     redirect: "https://lapor.fkipunej.my.id/",
+  },
+  {
+    image: "/assets/projects/ssc.png",
+    title: "SSC SMASA 2024",
+    deskripsi:
+      "Science School Competition 2024 SMA Negeri 1 Jember",
+    github: null,
+    build: [
+      SelectionTech.Laravel,
+      SelectionTech.Mysql,
+      SelectionTech.Bootstrap,
+    ],
+    redirect: "https://sscxxiv.com",
   },
 ];
 

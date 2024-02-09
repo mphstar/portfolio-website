@@ -9,7 +9,10 @@ enum SelectionTech {
   Kotlin,
   Netbeans,
   PHP,
-  Bootstrap
+  Bootstrap,
+  Flutter,
+  ExpressJS,
+  Java,
 }
 
 export default SelectionTech;
