@@ -34,29 +34,45 @@ export default function Index() {
         strokeColor={color}
       />
       <div className="flex flex-col h-full flex-1 mt-24 items-center justify-center md:flex-row md:gap-12 select-none">
-          <Image
-            className="h-fit w-52 order-1"
-            height={400}
-            width={400}
-            src="/image_dashboard.png"
-            alt="profile"
-          />
-        <div className="order-2  flex flex-col">
+        <Image
+          className="h-fit w-96 order-1 fixed -z-[31] bottom-0 pointer-events-none"
+          height={800}
+          width={800}
+          src="/assets/girl.png"
+          alt="profile"
+        />
+        <div className="order-2  flex flex-col dark:bg-black/40 rounded-md px-6 dark:backdrop-blur-lg py-5">
           <div className="mt-4">
-            <p className="text-center md:text-left Virgil text-3xl md:text-5xl">
-              <b>Hi.</b> I'm Bintang,👋
+            <p className="text-center md:text-center Virgil text-3xl md:text-5xl">
+              <b>Hi.</b> I'm Bintang!
             </p>
           </div>
           {/* <div>
-            <p className="poppins-semibold text-center text-2xl bg-gradient-to-br from-blue-400 via-fuchsia-600 to-cyan-200 text-transparent bg-clip-text md:text-left">
+            <p className="poppins-semibold text-center text-2xl bg-gradient-to-br from-blue-400 via-fuchsia-600 to-cyan-200 text-transparent bg-clip-text md:text-center">
               Bintang Malindo Eka Putra
             </p>
           </div> */}
           <div>
-            <p className="text-center text-gray-700 dark:text-gray-300 w-full px-4 md:px-0 flex items-center justify-center text-lg font-poppins-regular md:text-left md:justify-start">
+            <p className="text-center text-gray-700 dark:text-gray-300 w-full px-4 md:px-0 flex items-center justify-center text-lg font-poppins-regular md:text-center md:justify-center">
               Website & Mobile Developer
             </p>
-            <p className="text-center md:text-left max-w-[550px]">Checkout my <Link className="underline relative z-10 font-semibold" href="/portofolio">past works</Link> or learn more <Link className="underline relative z-10 font-semibold" href="/about">about me</Link>.</p>
+            <p className="text-center md:text-center max-w-[550px]">
+              Checkout my{" "}
+              <Link
+                className="underline relative z-10 font-semibold"
+                href="/portofolio"
+              >
+                past works
+              </Link>{" "}
+              or learn more{" "}
+              <Link
+                className="underline relative z-10 font-semibold"
+                href="/about"
+              >
+                about me
+              </Link>
+              .
+            </p>
 
             {/* <Typed
               className='text-center w-full px-4 md:px-0 flex items-center justify-center text-lg poppins-regular md:text-left md:justify-start'

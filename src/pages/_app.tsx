@@ -2,7 +2,7 @@ import "@/styles/globals.css";
 import { AnimatePresence } from "framer-motion";
 import { ThemeProvider } from "next-themes";
 import type { AppProps } from "next/app";
-import { DefaultSeo } from "next-seo";
+import { DefaultSeo, NextSeo } from "next-seo";
 import useSWR from "swr";
 import SpotifyContext from "@/utils/SpotifyContext";
 
@@ -12,17 +12,17 @@ export default function App({ Component, pageProps }: AppProps) {
 
   return (
     <ThemeProvider defaultTheme="dark" attribute="class">
-      <DefaultSeo
-        title="Bintang Malindo Eka Putra - Junior Fullstack Developer"
+      <NextSeo
+        title="Bintang Malindo Eka Putra | Mphstar"
         description={
-          "I am Bintang Malindo Eka Putra, a 5th semester Informatics Engineering student from Jember State Polytechnic. I have a strong interest in Website and Mobile application development."
+          "I am Bintang Malindo Eka Putra, I have a strong interest in Website and Mobile application development."
         }
-        defaultTitle="Bintang Malindo Eka Putra - Junior Fullstack Developer"
-        titleTemplate={`%s · mphstar.tech`}
+        defaultTitle="Bintang Malindo Eka Putra | Mphstar"
+        titleTemplate={`%s · Mphstar`}
         openGraph={{
-          title: "Bintang Malindo Eka Putra - Junior Fullstack Developer",
+          title: "Bintang Malindo Eka Putra | Mphstar",
           description:
-            "I am Bintang Malindo Eka Putra, a 5th semester Informatics Engineering student from Jember State Polytechnic. I have a strong interest in Website and Mobile application development.",
+            "I am Bintang Malindo Eka Putra, I have a strong interest in Website and Mobile application development.",
           images: [
             {
               url: `https://mphstar.tech/assets/foto.jpg`,
