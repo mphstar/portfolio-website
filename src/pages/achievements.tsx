@@ -7,7 +7,7 @@ import animationData from "../components/lottie/maintenance.json";
 import Image from "next/image";
 import ContentAchievement from "@/components/ContentAchievement";
 
-export default function achievements() {
+export default function Achievements() {
   const [page, setPage] = useState(1);
 
   return (
