@@ -14,14 +14,15 @@ const CardPortfolio = (data: DataInterface) => {
   return (
     <div
       data-aos="zoom-in"
-      className="w-full h-full hover:scale-110 flex flex-col border-2 group dark:border-slate-500 rounded-lg overflow-hidden"
+      className="w-full h-fit flex flex-col border-2 group dark:border-slate-500 rounded-lg overflow-hidden"
     >
       <Image
         src={data.data.image}
         alt="image"
+        priority
         width={2048}
         height={2048}
-        className="w-full object-cover h-60 group-hover:scale-110 duration-300 ease-in-out"
+        className="w-full object-cover h-fit duration-300 ease-in-out"
       />
       <div className="flex flex-col flex-1 px-2">
         <p className="font-semibold line-clamp-2 mt-2 ">{data.data.title}</p>

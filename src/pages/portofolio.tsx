@@ -17,7 +17,7 @@ export default function portofolio() {
         <div className="w-full flex flex-col justify-center">
           <p className="font-semibold text-3xl">Portfolio</p>
           <p>Some collection of my past works.</p>
-          <div className="grid grid-cols-1 md:grid-cols-2 mb-4 lg:grid-cols-2 grid-flow-dense mt-4 gap-4">
+          <div className="columns-2 gap-4 space-y-5 mt-4">
             {port.map((item, index) => {
               return <CardPortfolio data={item} key={index} />;
             })}

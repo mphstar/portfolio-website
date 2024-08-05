@@ -57,6 +57,7 @@ const ContentAchievement = ({
           {foto.map((item: any, index: number) => (
             <Image
               key={index}
+              priority
               src={item}
               alt="sertif"
               width={500}

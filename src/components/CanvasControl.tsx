@@ -14,9 +14,9 @@ export default function CanvasControl({ clearCanvas, color, setColor }: canvasTy
         'rgba(236, 72, 153, 0.6)',
     ];
     return (
-        <div className='fixed w-fit  left-0 top-0 h-[90vh] items-center flex px-4 md:px-8 cursor-none pointer-events-none z-30'>
+        <div className='md:fixed w-fit left-0 top-0 md:h-[100dvh] items-center flex md:px-8 cursor-none pointer-events-none z-30'>
             <div className='flex h-fit w-fit p-2 bg-gray-200 dark:bg-slate-800 rounded-full z-40 pointer-events-auto'>
-                <div className='flex flex-col space-y-1'>
+                <div className='flex md:flex-col space-1'>
                     {colors.map((data, key) => {
                         return (
                             <button

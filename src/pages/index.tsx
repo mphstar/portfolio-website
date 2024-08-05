@@ -33,18 +33,18 @@ export default function Index() {
         strokeWidth={5}
         strokeColor={color}
       />
-      <div className="flex flex-col h-full flex-1 mt-24 items-center justify-center md:flex-row md:gap-12 select-none">
-        <Image
+      <div className="flex flex-col h-full flex-1 mt-24 md:items-center justify-center md:flex-row md:gap-12 select-none">
+        {/* <Image
           className="h-fit w-96 order-1 fixed -z-[31] bottom-0 pointer-events-none"
           height={800}
           width={800}
           src="/assets/girl.png"
           alt="profile"
-        />
-        <div className="order-2  flex flex-col dark:bg-black/40 rounded-md px-6 dark:backdrop-blur-lg py-5">
-          <div className="mt-4">
-            <p className="text-center md:text-center Virgil text-3xl md:text-5xl">
-              <b>Hi.</b> I'm Bintang!
+        /> */}
+        <div className="order-2  flex flex-col rounded-md px-4 dark:backdrop-blur-lg py-5">
+          <div className="mt-4 mb-3">
+            <p className="text-start md:text-center font-semibold Virgil text-3xl md:text-5xl">
+              <b>Hi.</b> I'm Bintang
             </p>
           </div>
           {/* <div>
@@ -53,10 +53,10 @@ export default function Index() {
             </p>
           </div> */}
           <div>
-            <p className="text-center text-gray-700 dark:text-gray-300 w-full px-4 md:px-0 flex items-center justify-center text-lg font-poppins-regular md:text-center md:justify-center">
-              Website & Mobile Developer
+            <p className="md:text-center text-gray-700 dark:text-gray-300 w-full md:px-4 text-xs flex md:items-center md:text-base font-poppins-regular md:justify-center">
+              Website & Mobile Developer ✨
             </p>
-            <p className="text-center md:text-center max-w-[550px]">
+            <p className="text-start md:text-center text-sm md:text-base max-w-[550px]">
               Checkout my{" "}
               <Link
                 className="underline relative z-10 font-semibold"
@@ -73,6 +73,13 @@ export default function Index() {
               </Link>
               .
             </p>
+            <div className="flex md:hidden mt-4">
+              <CanvasControl
+                clearCanvas={clearHandler}
+                color={color}
+                setColor={setColor}
+              />
+            </div>
 
             {/* <Typed
               className='text-center w-full px-4 md:px-0 flex items-center justify-center text-lg poppins-regular md:text-left md:justify-start'
@@ -88,11 +95,13 @@ export default function Index() {
           </div>
         </div>
       </div>
-      <CanvasControl
-        clearCanvas={clearHandler}
-        color={color}
-        setColor={setColor}
-      />
+      <div className="hidden md:flex">
+        <CanvasControl
+          clearCanvas={clearHandler}
+          color={color}
+          setColor={setColor}
+        />
+      </div>
     </Main>
   );
 }

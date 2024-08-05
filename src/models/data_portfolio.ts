@@ -25,7 +25,12 @@ const data = [
     deskripsi:
       "ERP system for optics with a home service system equipped with transaction, inventory, finance, personnel and distribution modules.",
     github: "https://github.com/mphstar/wg-optical.git",
-    build: [SelectionTech.Flutter, SelectionTech.PHP, SelectionTech.Mysql, SelectionTech.Tailwindcss],
+    build: [
+      SelectionTech.Flutter,
+      SelectionTech.PHP,
+      SelectionTech.Mysql,
+      SelectionTech.Tailwindcss,
+    ],
     redirect: "https://wgoptical.mphstar.my.id/",
   },
   {
@@ -38,7 +43,7 @@ const data = [
       SelectionTech.Laravel,
       SelectionTech.Mysql,
       SelectionTech.Tailwindcss,
-      SelectionTech.Java
+      SelectionTech.Java,
     ],
     redirect: "https://tijara.mphstar.my.id/",
   },
@@ -159,8 +164,7 @@ const data = [
   {
     image: "/assets/projects/ssc.png",
     title: "SSC SMASA 2024",
-    deskripsi:
-      "Science School Competition 2024 SMA Negeri 1 Jember",
+    deskripsi: "Science School Competition 2024 SMA Negeri 1 Jember",
     github: null,
     build: [
       SelectionTech.Laravel,
@@ -168,6 +172,44 @@ const data = [
       SelectionTech.Bootstrap,
     ],
     redirect: "https://sscxxiv.com",
+  },
+  {
+    image: "/assets/projects/sarpras.png",
+    title: "E-Sarpras FKIP Universitas Jember",
+    deskripsi:
+      "Aplikasi website untuk peminjaman barang ataupun ruangan pada Fakultas Keguruan dan Keilmuan Universitas Jember.",
+    github: null,
+    build: [
+      SelectionTech.Tailwindcss,
+      SelectionTech.Mysql,
+      SelectionTech.Laravel,
+      SelectionTech.Inertia,
+    ],
+    redirect: "https://sarpras.fkipunej.my.id/",
+  },
+  {
+    image: "/assets/projects/howa.png",
+    title: "Howardle Dsy",
+    deskripsi:
+      "Implementasi UI Design Howardle Dsy to Website.",
+    github: "https://github.com/mphstar/howardle-dsy.git",
+    build: [
+      SelectionTech.React,
+      SelectionTech.Tailwindcss,
+    ],
+    redirect: "https://howardle-dsy.vercel.app/",
+  },
+  {
+    image: "/assets/projects/ai.png",
+    title: "Mphstar AI",
+    deskripsi:
+      "Integrate with Gemini AI API.",
+    github: "https://github.com/mphstar/mphstar-ai.git",
+    build: [
+      SelectionTech.React,
+      SelectionTech.Tailwindcss,
+    ],
+    redirect: "https://mphstar-ai.vercel.app/",
   },
 ];
 
