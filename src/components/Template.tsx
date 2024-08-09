@@ -31,13 +31,15 @@ export default function Template(props: templateType) {
           animate="enter"
           exit="exit"
           transition={{ ease: "easeInOut", duration: 0.5 }}
-          className={"flex flex-col h-full min-h-[100dvh] flex-grow"}
+          className={
+            "flex flex-col h-full min-h-[100dvh] -z-[100] bg-[#ecf0f8] dark:bg-[#171718] flex-grow"
+          }
         >
-          <div className="flex flex-col container h-full flex-1 mx-auto max-w-[900px] px-4">
+          <div className="flex flex-col container h-full flex-1 mx-auto max-w-[1000px] px-4">
             {children}
-            <div className="flex w-full">
-              <Footer />
-            </div>
+          </div>
+          <div className="flex w-full ">
+            <Footer />
           </div>
         </m.div>
       </LazyMotion>

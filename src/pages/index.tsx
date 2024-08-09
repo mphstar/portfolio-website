@@ -33,16 +33,55 @@ export default function Index() {
         strokeWidth={5}
         strokeColor={color}
       />
-      <div className="flex flex-col h-full flex-1 mt-24 md:items-center justify-center md:flex-row md:gap-12 select-none">
-        {/* <Image
-          className="h-fit w-96 order-1 fixed -z-[31] bottom-0 pointer-events-none"
+      <div className="flex flex-col w-full h-full flex-1 mt-24 md:items-center items-center justify-center md:justify-start md:flex-row md:gap-12 select-none">
+        <Image
+          className="h-fit w-96 order-1 fixed bottom-0 z-[0] md:hidden pointer-events-none"
           height={800}
           width={800}
           src="/assets/girl.png"
           alt="profile"
-        /> */}
-        <div className="order-2  flex flex-col rounded-md px-4 dark:backdrop-blur-lg py-5">
-          <div className="mt-4 mb-3">
+        />
+        <div className="hidden md:flex px-8 md:pl-12 relative">
+          <div className="h-full flex justify-center absolute left-0 -translate-y-20 md:left-4 z-[2] items-center">
+            <img
+              className="h-20 rotate-[-6deg] drop-shadow-2xl"
+              src="/assets/kamera.png"
+              alt="Kamera"
+            />
+          </div>
+          <div className="bg-red-400 hidden md:flex rotate-[-4deg] text-white px-3 py-1 rounded-md absolute z-[3] right-0 translate-x-24 top-20">
+            Front-End Developer
+          </div>
+          <div className="bg-blue-400 hidden md:flex rotate-[3deg] text-white px-3 py-1 rounded-md absolute z-[3] right-0 translate-x-24 top-36">
+            Mobile Developer
+          </div>
+          <div className="flex z-[1]">
+            <div className="md:flex bg-blue-300 absolute hidden md:left-12 top-0 p-6 rotate-[0deg] rounded-md drop-shadow md:drop-shadow-xl flex-col">
+              <Image
+                className="h-fit w-60 border-2"
+                height={800}
+                width={800}
+                src="/assets/pp.png"
+                alt="profile"
+              />
+              <p className="mt-3 font-poppins-regular">Mphstar.jpg</p>
+            </div>
+            <div className="flex bg-white p-6 rotate-[6deg] rounded-md drop-shadow md:drop-shadow-xl flex-col">
+              <Image
+                className="h-fit w-60 border-2 border-[#c8c6c6]"
+                height={800}
+                width={800}
+                src="/assets/pp.png"
+                alt="profile"
+              />
+              <p className="mt-3 font-poppins-regular dark:text-bg-dark">
+                Mphstar.jpg
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="order-2 flex flex-col justify-center rounded-md px-4 py-5 flex-1">
+          <div className="mt-4 mb-3 z-[10]">
             <p className="text-start md:text-center font-semibold Virgil text-3xl md:text-5xl">
               <b>Hi.</b> I'm Bintang
             </p>
@@ -53,10 +92,10 @@ export default function Index() {
             </p>
           </div> */}
           <div>
-            <p className="md:text-center text-gray-700 dark:text-gray-300 w-full md:px-4 text-xs flex md:items-center md:text-base font-poppins-regular md:justify-center">
+            <div className="md:text-center text-gray-700 dark:text-gray-300 w-full md:px-4 text-xs flex md:items-center md:text-base font-poppins-regular md:justify-center z-[10]">
               Website & Mobile Developer ✨
-            </p>
-            <p className="text-start md:text-center text-sm md:text-base max-w-[550px]">
+            </div>
+            <div className="text-start md:text-center text-sm md:text-base z-10 max-w-[550px]">
               Checkout my{" "}
               <Link
                 className="underline relative z-10 font-semibold"
@@ -72,8 +111,8 @@ export default function Index() {
                 about me
               </Link>
               .
-            </p>
-            <div className="flex md:hidden mt-4">
+            </div>
+            <div className="flex md:hidden mt-4 z-[10]">
               <CanvasControl
                 clearCanvas={clearHandler}
                 color={color}
