@@ -21,7 +21,7 @@ export default function Index() {
       clearCanvas();
     }
   };
-
+  
   const [color, setColor] = useState("rgba(99, 102, 241, 0.6)");
   return (
     <Main selectedNav="Home" title="Hi, I'm Bintang | @Mphstar">
@@ -35,7 +35,7 @@ export default function Index() {
       />
       <div className="flex flex-col w-full h-full flex-1 mt-24 md:items-center items-center justify-center md:justify-start md:flex-row md:gap-12 select-none">
         <Image
-          className="h-fit w-96 order-1 fixed bottom-0 z-[0] md:hidden pointer-events-none"
+          className="h-fit w-96 order-1 fixed bottom-0 z-[0] dark:opacity-70 md:hidden pointer-events-none"
           height={800}
           width={800}
           src="/assets/girl.png"
@@ -92,10 +92,10 @@ export default function Index() {
             </p>
           </div> */}
           <div>
-            <div className="md:text-center text-gray-700 dark:text-gray-300 w-full md:px-4 text-xs flex md:items-center md:text-base font-poppins-regular md:justify-center z-[10]">
+            <div className="md:text-center text-gray-700 relative dark:text-gray-300 w-full md:px-4 text-xs flex md:items-center md:text-base font-poppins-regular md:justify-center z-[10]">
               Website & Mobile Developer ✨
             </div>
-            <div className="text-start md:text-center text-sm md:text-base z-10 max-w-[550px]">
+            <div className="text-start md:text-center text-sm md:text-base relative z-10 max-w-[550px]">
               Checkout my{" "}
               <Link
                 className="underline relative z-10 font-semibold"
