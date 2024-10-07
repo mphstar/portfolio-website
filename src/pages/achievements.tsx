@@ -2,9 +2,6 @@
 
 import React, { useState } from "react";
 import Main from "@/components/Template";
-import Lottie from "lottie-react";
-import animationData from "../components/lottie/maintenance.json";
-import Image from "next/image";
 import ContentAchievement from "@/components/ContentAchievement";
 
 export default function Achievements() {

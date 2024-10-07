@@ -14,7 +14,7 @@ const CardPortfolio = (data: DataInterface) => {
   return (
     <div
       data-aos="zoom-in"
-      className="w-full h-fit flex flex-col border-2 group dark:border-slate-500 rounded-lg overflow-hidden"
+      className="w-full h-fit flex flex-col border-2 group dark:border-slate-500 bg-white rounded-lg overflow-hidden"
     >
       <Image
         src={data.data.image}
@@ -24,7 +24,7 @@ const CardPortfolio = (data: DataInterface) => {
         height={2048}
         className="w-full object-cover h-fit duration-300 ease-in-out"
       />
-      <div className="flex flex-col flex-1 px-2">
+      <div className="flex flex-col flex-1 px-4">
         <p className="font-semibold line-clamp-2 mt-2 ">{data.data.title}</p>
         <p className="text-xs line-clamp-3 mt-1">{data.data.deskripsi}</p>
         <div className="flex flex-row gap-2 flex-shrink flex-wrap mt-3">

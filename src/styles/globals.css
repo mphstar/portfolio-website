@@ -45,7 +45,15 @@
   font-family: "Virgil", sans-serif !important;
 }
 
+.masonry {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 16px;
+}
 
+.masonry > * {
+  break-inside: avoid;
+}
 
 .bg-name {
   text-align: center;

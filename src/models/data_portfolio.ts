@@ -190,26 +190,81 @@ const data = [
   {
     image: "/assets/projects/howa.png",
     title: "Howardle Dsy",
-    deskripsi:
-      "Implementasi UI Design Howardle Dsy to Website.",
+    deskripsi: "Implementasi UI Design Howardle Dsy to Website.",
     github: "https://github.com/mphstar/howardle-dsy.git",
-    build: [
-      SelectionTech.React,
-      SelectionTech.Tailwindcss,
-    ],
+    build: [SelectionTech.React, SelectionTech.Tailwindcss],
     redirect: "https://howardle-dsy.vercel.app/",
   },
   {
     image: "/assets/projects/ai.png",
     title: "Mphstar AI",
-    deskripsi:
-      "Integrate with Gemini AI API.",
+    deskripsi: "Integrate with Gemini AI API.",
     github: "https://github.com/mphstar/mphstar-ai.git",
+    build: [SelectionTech.React, SelectionTech.Tailwindcss],
+    redirect: "https://mphstar-ai.vercel.app/",
+  },
+  {
+    image: "/assets/projects/sck.png",
+    title: "SCK-CO",
+    deskripsi:
+      "Website Marketplace  & product documentation with payment getway and dashboard admin develop by diprojectin",
+    github: null,
     build: [
       SelectionTech.React,
       SelectionTech.Tailwindcss,
+      SelectionTech.Laravel,
+      SelectionTech.Mysql,
     ],
-    redirect: "https://mphstar-ai.vercel.app/",
+    redirect: "https://sckco.mphstar.my.id/",
+  },
+  {
+    image: "/assets/projects/esystem.png",
+    title: "E-System",
+    deskripsi:
+      "Website Marketplace  & product documentation with payment getway and dashboard admin develop by diprojectin",
+    github: null,
+    build: [SelectionTech.Nextjs, SelectionTech.Tailwindcss],
+    redirect: "https://e-system-website.vercel.app/",
+  },
+  {
+    image: "/assets/projects/ksuli.png",
+    title: "K-Suli SIBI",
+    deskripsi:
+      "Learning SIBI with K-Suli. Detection Hand Sign using Deep Learning.",
+    github: null,
+    build: [
+      SelectionTech.React,
+      SelectionTech.Tailwindcss,
+      SelectionTech.Python,
+    ],
+    redirect: "https://ksuli-sibi.vercel.app/",
+  },
+  {
+    image: "/assets/projects/safepath.png",
+    title: "Safepath",
+    deskripsi:
+      "Mapping of crime and accidents in Jember city. This project created for competition Hackaton & Smart City Gemastik",
+    github: "https://github.com/mphstar/safepath",
+    build: [
+      SelectionTech.React,
+      SelectionTech.Tailwindcss,
+      SelectionTech.Python,
+    ],
+    redirect: "https://safepath.mphstar.my.id/",
+  },
+  {
+    image: "/assets/projects/jvims.png",
+    title: "J-ViMS",
+    deskripsi:
+      "Website and mobile application for managing tourist tickets in Jember city",
+    github: null,
+    build: [
+      SelectionTech.React,
+      SelectionTech.Tailwindcss,
+      SelectionTech.Laravel,
+      SelectionTech.Mysql
+    ],
+    redirect: "https://j-vims.com/",
   },
 ];
 
