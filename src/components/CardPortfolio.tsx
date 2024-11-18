@@ -1,27 +1,19 @@
 import DataInterface from "@/models/DataInterface";
 import Image from "next/image";
 import React, { useEffect } from "react";
-import AOS from "aos";
 import "aos/dist/aos.css";
 import BadgeTech from "@/utils/BadgeTech";
-import SelectionTech from "@/utils/SelectionTech";
+import FullscreenImage from "./FullscreenImage";
 
 const CardPortfolio = (data: DataInterface) => {
-  useEffect(() => {
-    AOS.init();
-  }, []);
 
   return (
     <div
-      data-aos="zoom-in"
-      className="w-full h-fit flex flex-col border-2 group dark:border-slate-500 bg-white rounded-lg overflow-hidden"
+      className="w-full h-fit flex flex-col border-2 group dark:border-slate-500 bg-white dark:bg-black rounded-lg overflow-hidden"
     >
-      <Image
+      <FullscreenImage
         src={data.data.image}
         alt="image"
-        priority
-        width={2048}
-        height={2048}
         className="w-full object-cover h-fit duration-300 ease-in-out"
       />
       <div className="flex flex-col flex-1 px-4">

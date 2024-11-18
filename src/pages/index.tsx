@@ -21,7 +21,7 @@ export default function Index() {
       clearCanvas();
     }
   };
-  
+
   const [color, setColor] = useState("rgba(99, 102, 241, 0.6)");
   return (
     <Main selectedNav="Home" title="Hi, I'm Bintang | @Mphstar">
@@ -61,7 +61,7 @@ export default function Index() {
                 className="h-fit w-60 border-2"
                 height={800}
                 width={800}
-                src="/assets/pp.png"
+                src="/assets/kaoruko.gif"
                 alt="profile"
               />
               <p className="mt-3 font-poppins-regular">Mphstar.jpg</p>
@@ -71,7 +71,7 @@ export default function Index() {
                 className="h-fit w-60 border-2 border-[#c8c6c6]"
                 height={800}
                 width={800}
-                src="/assets/pp.png"
+                src="/assets/kaoruko.gif"
                 alt="profile"
               />
               <p className="mt-3 font-poppins-regular dark:text-bg-dark">
