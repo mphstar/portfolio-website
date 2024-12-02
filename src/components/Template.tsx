@@ -25,7 +25,7 @@ export default function Template(props: templateType) {
       <Navbar selectedNav={selectedNav} title="Mphstar" />
       <LazyMotion features={domAnimation}>
         <m.div
-          key={router.asPath}
+          
           variants={variants}
           initial="hidden"
           animate="enter"

@@ -11,6 +11,9 @@ const nextConfig = {
       {
         hostname: "i.scdn.co",
       },
+      {
+        hostname: "media.tenor.com"
+      }
     ],
   },
 };

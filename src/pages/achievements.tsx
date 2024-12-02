@@ -49,7 +49,7 @@ export default function Achievements() {
             judul={"Alibaba Cloud Certified Developers"}
             penerbit={"Alibaba Cloud"}
             keahlian={["Front-End Development", "Back-End Development"]}
-            foto={["/assets/sertif/alibaba.jfif"]}
+            foto={["/assets/sertif/alibaba.jpg"]}
           />
           <ContentAchievement
             profile="/assets/foto.jpg"
@@ -64,7 +64,7 @@ export default function Achievements() {
               "Database Administration",
               "User Interface Design",
             ]}
-            foto={["/assets/sertif/knu.jfif"]}
+            foto={["/assets/sertif/knu.jpg"]}
           />
 
           {page > 1 && (
@@ -92,7 +92,7 @@ export default function Achievements() {
                 judul={"Junior Mobile Programmer"}
                 penerbit={"Badan Nasional Sertifikasi Profesi (BNSP)"}
                 keahlian={["Mobile Application Development", "Flutter"]}
-                foto={["/assets/sertif/junior_mobile.jfif"]}
+                foto={["/assets/sertif/junior_mobile.jpg"]}
               />
 
               <ContentAchievement
