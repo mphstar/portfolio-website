@@ -38,7 +38,7 @@ const Education = ({
             duration: 0.5,
             delay: 0.2,
           }
-        }} className=" w-[2px] bg-black"></motion.div>
+        }} className=" w-[2px] bg-black dark:bg-white"></motion.div>
       </div>
       <div className="w-full flex flex-col flex-1 pb-4">
         <LettersPullUp

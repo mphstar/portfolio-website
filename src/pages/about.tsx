@@ -231,7 +231,7 @@ const About = () => {
               </motion.p>
             </div>
           </div>
-          <div data-aos="fade-right">
+          <div>
             <LettersPullUp
               className="font-semibold text-3xl mb-4 mt-12"
               text="Education"
