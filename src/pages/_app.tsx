@@ -35,7 +35,7 @@ export default function App({ Component, pageProps }: AppProps) {
           ],
         }}
       />
-      <AnimatePresence initial={false} mode="wait">
+      <AnimatePresence initial={true} mode="wait">
         <motion.div key={router.asPath}>
           <SpotifyContext.Provider value={{ data }}>
             <PageWrapper>

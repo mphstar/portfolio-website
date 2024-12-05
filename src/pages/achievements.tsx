@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Main from "@/components/Template";
 import ContentAchievement from "@/components/ContentAchievement";
+import { LettersPullUp } from "@/components/LettersPullUp";
 
 export default function Achievements() {
   const [page, setPage] = useState(1);
@@ -11,7 +12,7 @@ export default function Achievements() {
     <Main selectedNav="Achievements" title="Achievements | @Mphstar">
       <div className="flex flex-col w-full flex-1 h-full mt-24 mb-4 justify-start px-4 md:px-8 items-center overflow-hidden">
         <div className="w-full flex flex-col justify-center mb-8">
-          <p className="font-semibold text-3xl">Achievements</p>
+          <LettersPullUp className="font-semibold text-3xl" text="Achievements" />
           <p>Here is a list of achievements that I have obtained:</p>
         </div>
         <div className="flex flex-col h-full w-full gap-3">

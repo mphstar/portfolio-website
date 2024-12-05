@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 
 interface FullscreenImageProps {
   src: string;
@@ -27,14 +28,24 @@ const FullscreenImage: React.FC<FullscreenImageProps> = ({
   return (
     <>
       {/* Thumbnail Image */}
-      <Image
-        width={2048}
-        height={2048}
-        src={src}
-        alt={alt}
-        className={`cursor-pointer ${className}`}
-        onClick={handleOpenFullscreen}
-      />
+      <motion.div
+        initial={{ scale: 0, opacity: 0 }}
+        whileInView={{
+          scale: 1,
+          opacity: 1,
+          transition: { duration: 0.5 },
+        }}
+      >
+        <Image
+          width={2048}
+          height={2048}
+          src={src}
+          fetchPriority="high"
+          alt={alt}
+          className={`cursor-pointer ${className}`}
+          onClick={handleOpenFullscreen}
+        />
+      </motion.div>
 
       {/* Fullscreen Modal */}
       {isFullscreen && (
