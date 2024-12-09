@@ -32,7 +32,7 @@ const Education = ({
         </motion.div>
         <motion.div initial={{
           height: 0,
-        }} whileInView={{
+        }}  whileInView={{
           height: "100%",
           transition: {
             duration: 0.5,

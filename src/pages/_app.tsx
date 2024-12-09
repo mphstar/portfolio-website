@@ -18,19 +18,19 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider defaultTheme="dark" attribute="class">
       <NextSeo
-        title="Bintang Malindo Eka Putra | Mphstar"
+        title="Bintang Malindo Eka Putra"
         description={
           "I am Bintang Malindo Eka Putra, I have a strong interest in Website and Mobile application development."
         }
-        defaultTitle="Bintang Malindo Eka Putra | Mphstar"
+        defaultTitle="Bintang Malindo Eka Putra"
         titleTemplate={`%s · Mphstar`}
         openGraph={{
-          title: "Bintang Malindo Eka Putra | Mphstar",
+          title: "Bintang Malindo Eka Putra",
           description:
             "I am Bintang Malindo Eka Putra, I have a strong interest in Website and Mobile application development.",
           images: [
             {
-              url: `https://mphstar.tech/assets/foto.jpg`,
+              url: `https://www.mphstar.me/assets/foto.jpg`,
             },
           ],
         }}

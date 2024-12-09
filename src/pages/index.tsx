@@ -9,6 +9,7 @@ import { ReactSketchCanvas } from "react-sketch-canvas";
 
 import animationData from "../components/lottie/loading.json";
 import Link from "next/link";
+import Head from "next/head";
 
 export default function Index() {
   const canvasRef = useRef(null);
@@ -25,6 +26,10 @@ export default function Index() {
   const [color, setColor] = useState("rgba(99, 102, 241, 0.6)");
   return (
     <Main selectedNav="Home" title="Hi, I'm Bintang | @Mphstar">
+      <Head>
+        {/* add canonical */}
+        <link rel="canonical" href="https://www.mphstar.me" />
+      </Head>
       <ReactSketchCanvas
         ref={canvasRef}
         style={{ zIndex: 5 }}
