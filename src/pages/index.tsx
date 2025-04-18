@@ -39,13 +39,13 @@ export default function Index() {
         strokeColor={color}
       />
       <div className="flex flex-col w-full h-full flex-1 mt-24 md:items-center items-center justify-center md:justify-start md:flex-row md:gap-12 select-none">
-        <Image
+        {/* <Image
           className="h-fit w-96 order-1 fixed bottom-0 z-[0] dark:opacity-70 md:hidden pointer-events-none"
           height={800}
           width={800}
           src="/assets/girl.png"
           alt="profile"
-        />
+        /> */}
         <div className="hidden md:flex px-8 md:pl-12 relative">
           <div className="h-full flex justify-center absolute left-0 -translate-y-20 md:left-4 z-[2] items-center">
             <img

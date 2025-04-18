@@ -184,7 +184,7 @@ const About = () => {
               }}
             >
               <Image
-                className="w-full h-full rounded-full"
+                className="md:w-full md:h-full h-48 w-48 rounded-full"
                 height={400}
                 width={400}
                 src="/assets/foto.jpg"
@@ -218,7 +218,7 @@ const About = () => {
                 <span className="font-poppins-semibold">
                   Bintang Malindo Eka Putra
                 </span>
-                , a 5th semester Informatics Engineering student from Jember
+                , a 8th semester Informatics Engineering student from Jember
                 State Polytechnic. I have a strong interest in{" "}
                 <span className="bg-slate-200 dark:bg-slate-700">
                   Website and Mobile application development

@@ -1,4 +1,5 @@
 import SelectionTech from "@/utils/SelectionTech";
+import { redirect } from "next/dist/server/api-utils";
 
 const data = [
   {
@@ -262,9 +263,40 @@ const data = [
       SelectionTech.React,
       SelectionTech.Tailwindcss,
       SelectionTech.Laravel,
-      SelectionTech.Mysql
+      SelectionTech.Mysql,
     ],
     redirect: "https://j-vims.com/",
+  },
+  {
+    image: "/assets/projects/diteras.png",
+    title: "D-Teras",
+    deskripsi: "Point of Sale Website for D-Teras",
+    github: null,
+    build: [SelectionTech.Laravel, SelectionTech.Mysql],
+    redirect: null,
+  },
+  {
+    image: "/assets/projects/ncv.png",
+    title: "NCV Studio",
+    deskripsi:
+      "Official website of NCV Studio, NCV is a creative agency specializing in branding, animation, and design. We transform ideas into meaningful visual creations. With a dedicated team, we deliver innovative solutions in motion graphics, illustration, 3D motion, Live2D, mixing mastering, MV, and video production.",
+    github: null,
+    build: [
+      SelectionTech.Laravel,
+      SelectionTech.Mysql,
+      SelectionTech.React,
+      SelectionTech.Nextjs,
+      SelectionTech.Tailwindcss,
+    ],
+    redirect: "https://ncv-studio.vercel.app/",
+  },
+  {
+    image: "/assets/projects/jtimerch.png",
+    title: "JTI Merch",
+    deskripsi: "Point of Sale Website for JTI Merch.",
+    github: null,
+    build: [SelectionTech.Laravel, SelectionTech.Mysql],
+    redirect: null,
   },
 ];
 
