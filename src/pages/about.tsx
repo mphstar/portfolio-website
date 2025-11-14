@@ -6,9 +6,9 @@ import SpotifyContext from "@/utils/SpotifyContext";
 import { Tooltip } from "react-tooltip";
 import { motion } from "framer-motion";
 import { LettersPullUp } from "@/components/LettersPullUp";
+import DiscordPresenceCard from "@/components/DiscordActivity";
 
 const About = () => {
-  const { data } = useContext<any>(SpotifyContext);
 
   const language = [
     {
@@ -416,68 +416,16 @@ const About = () => {
             </div>
           </div>
 
-          <div>
-            <LettersPullUp
-              className="font-bold text-3xl mb-3 mt-12"
-              text="Now Playing"
+          <div className="h-12"></div>
+          <LettersPullUp
+              className="font-bold text-3xl mb-3 mt-2"
+              text="Current Activities"
             />
-            <motion.p
-              initial={{
-                opacity: 0,
-                x: 50,
-              }}
-              whileInView={{
-                opacity: 1,
-                x: 0,
-              }}
-              transition={{
-                duration: 0.5,
-                delay: 0.2,
-              }}
-            >
-              See what i'm currently listening on spotify
-            </motion.p>
-            <div className="flex flex-row gap-4 p-2 mb-8 mt-4 rounded-lg border-dotted dark:border-slate-700 w-full border-2">
-              {data?.isPlaying ? (
-                <Image
-                  width={300}
-                  height={300}
-                  className="object-cover w-20 h-20 rounded-md"
-                  src={data?.albumImageUrl}
-                  alt={data?.album}
-                />
-              ) : (
-                <motion.div
-                  initial={{
-                    scale: 0,
-                  }}
-                  whileInView={{
-                    scale: 1,
-                    transition: {
-                      duration: 0.5,
-                      ease: [0.6, 0.05, -0.01, 0.9],
-                    },
-                  }}
-                  className="bg-slate-300 w-20 h-20 rounded-md"
-                ></motion.div>
-              )}
 
-              <div className="flex flex-col justify-center w-full">
-                {data?.isPlaying ? (
-                  <>
-                    <p className="poppins-semibold text-sm overflow-hidden flex flex-row h-fit w-full">
-                      {data?.artist}
-                    </p>
-                    <p className="poppins-regular text-sm overflow-hidden flex flex-row h-fit w-full">
-                      {data?.title}
-                    </p>
-                  </>
-                ) : (
-                  <LettersPullUp text="Not Listening to anything" />
-                )}
-              </div>
-            </div>
-          </div>
+          <DiscordPresenceCard />
+
+          <div className="h-12"></div>
+
         </div>
       </div>
     </Main>

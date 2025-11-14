@@ -13,6 +13,9 @@ const nextConfig = {
       },
       {
         hostname: "media.tenor.com"
+      },
+      {
+        hostname: "cdn.discordapp.com"
       }
     ],
   },

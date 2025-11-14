@@ -10,8 +10,6 @@ interface typeTitle {
 }
 
 export default function Navbar(props: typeTitle) {
-  const { data } = useContext<any>(SpotifyContext);
-
   const { title, selectedNav } = props;
   const { theme, setTheme } = useTheme();
 
@@ -157,33 +155,7 @@ export default function Navbar(props: typeTitle) {
                 </Link>
               </li>
             </ul>
-            {data?.isPlaying ? (
-              <div className="flex flex-col mb-8 w-full md:hidden">
-                <div className="h-[1px] w-full bg-gray-300 dark:bg-gray-600 mb-4"></div>
-                <p className="poppins-regular text-sm overflow-hidden text-gray-400 flex flex-row h-fit w-40">
-                  {data?.isPlaying
-                    ? "Listening To Spotify"
-                    : "Recently Played Songs"}
-                </p>
-                <div className="flex flex-row gap-2 mt-2 w-40">
-                  <img
-                    src={data?.albumImageUrl}
-                    alt={data?.album}
-                    className="object-cover w-10 rounded-sm"
-                  />
-                  <div className="flex flex-col justify-center">
-                    <p className="poppins-semibold text-xs overflow-hidden flex flex-row h-fit w-40">
-                      {data?.artist}
-                    </p>
-                    <p className="poppins-regular text-xs overflow-hidden flex flex-row h-fit w-40">
-                      {data?.title}
-                    </p>
-                  </div>
-                </div>
-              </div>
-            ) : (
-              ""
-            )}
+            
           </div>
         </div>
 

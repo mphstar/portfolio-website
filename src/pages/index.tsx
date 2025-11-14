@@ -28,7 +28,7 @@ export default function Index() {
     <Main selectedNav="Home" title="Hi, I'm Bintang | @Mphstar">
       <Head>
         {/* add canonical */}
-        <link rel="canonical" href="https://www.mphstar.me" />
+        <link rel="canonical" href="https://mphstar.my.id" />
       </Head>
       <ReactSketchCanvas
         ref={canvasRef}
@@ -66,7 +66,7 @@ export default function Index() {
                 className="h-fit w-60 border-2"
                 height={800}
                 width={800}
-                src="/assets/kaoruko.gif"
+                src="/profile.png"
                 alt="profile"
               />
               <p className="mt-3 font-poppins-regular">Mphstar.jpg</p>
@@ -76,7 +76,7 @@ export default function Index() {
                 className="h-fit w-60 border-2 border-[#c8c6c6]"
                 height={800}
                 width={800}
-                src="/assets/kaoruko.gif"
+                src="/profile.png"
                 alt="profile"
               />
               <p className="mt-3 font-poppins-regular dark:text-bg-dark">

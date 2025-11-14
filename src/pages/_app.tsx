@@ -10,8 +10,6 @@ import { useRouter } from "next/router";
 import Image from "next/image";
 
 export default function App({ Component, pageProps }: AppProps) {
-  const fetcher = (url: RequestInfo | URL) => fetch(url).then((r) => r.json());
-  const { data } = useSWR("/api/spotify", fetcher);
 
   const router = useRouter();
 
@@ -37,11 +35,9 @@ export default function App({ Component, pageProps }: AppProps) {
       />
       <AnimatePresence initial={true} mode="wait">
         <motion.div key={router.asPath}>
-          <SpotifyContext.Provider value={{ data }}>
-            <PageWrapper>
-              <Component {...pageProps} />
-            </PageWrapper>
-          </SpotifyContext.Provider>
+          <PageWrapper>
+            <Component {...pageProps} />
+          </PageWrapper>
         </motion.div>
       </AnimatePresence>
     </ThemeProvider>
