@@ -1,6 +1,6 @@
 import Image from "next/image";
-import React, { useState } from "react";
-import { motion } from "framer-motion";
+import React, { useEffect, useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
 
 interface FullscreenImageProps {
   src: string;
@@ -14,27 +14,36 @@ const FullscreenImage: React.FC<FullscreenImageProps> = ({
   className,
 }) => {
   const [isFullscreen, setIsFullscreen] = useState(false);
+  const layoutId = `fullscreen-${src}`;
 
-  const handleOpenFullscreen = () => {
-    setIsFullscreen(true);
-    document.body.style.overflow = "hidden";
-  };
+  useEffect(() => {
+    if (isFullscreen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [isFullscreen]);
+
+  const handleOpenFullscreen = () => setIsFullscreen(true);
 
   const handleCloseFullscreen = () => {
     setIsFullscreen(false);
-    document.body.style.overflow = "auto";
   };
 
   return (
     <>
       {/* Thumbnail Image */}
       <motion.div
+        layoutId={layoutId}
         initial={{ scale: 0, opacity: 0 }}
-        whileInView={{
-          scale: 1,
-          opacity: 1,
-          transition: { duration: 0.5 },
-        }}
+        whileInView={{ scale: 1, opacity: 1, transition: { duration: 0.4 } }}
+        transition={{ layout: { duration: 0.35, ease: [0.4, 0, 0.2, 1] } }}
+        className="w-full h-full"
+        onClick={handleOpenFullscreen}
       >
         <Image
           width={2048}
@@ -43,30 +52,50 @@ const FullscreenImage: React.FC<FullscreenImageProps> = ({
           fetchPriority="high"
           alt={alt}
           className={`cursor-pointer ${className}`}
-          onClick={handleOpenFullscreen}
         />
       </motion.div>
 
       {/* Fullscreen Modal */}
-      {isFullscreen && (
-        <div
-          className="fixed inset-0 z-[2000] flex items-center justify-center bg-black bg-opacity-80"
-          onClick={handleCloseFullscreen}
-        >
-          <img
-            src={src}
-            alt={alt}
-            className="max-w-[70%] max-h-[90%] object-contain"
-          />
-          {/* Close button */}
-          <button
-            className="absolute top-4 right-4 text-white text-xl bg-black bg-opacity-50 p-2 rounded-full"
+      <AnimatePresence>
+        {isFullscreen && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.2 }}
+            className="fixed inset-0 z-[2000] flex items-center justify-center bg-black/80 backdrop-blur-[1px]"
             onClick={handleCloseFullscreen}
           >
-            ✕
-          </button>
-        </div>
-      )}
+            <motion.div
+              layoutId={layoutId}
+              transition={{ layout: { duration: 0.35, ease: [0.4, 0, 0.2, 1] } }}
+              className="max-w-[70%] max-h-[90%] w-full h-full flex items-center justify-center px-4"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <motion.img
+                initial={{ scale: 0.98, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                exit={{ scale: 0.98, opacity: 0 }}
+                transition={{ duration: 0.25, ease: "easeOut" }}
+                src={src}
+                alt={alt}
+                className="w-full h-full object-contain"
+              />
+            </motion.div>
+            {/* Close button */}
+            <motion.button
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -10 }}
+              transition={{ duration: 0.2 }}
+              className="absolute top-4 right-4 text-white text-xl bg-black bg-opacity-50 p-2 rounded-full"
+              onClick={handleCloseFullscreen}
+            >
+              X
+            </motion.button>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </>
   );
 };
