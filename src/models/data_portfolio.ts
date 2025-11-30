@@ -305,7 +305,7 @@ const data = [
       "Personalized tourism management system for Jember to curate destinations and experiences.",
     github: null,
     build: [SelectionTech.React, SelectionTech.Laravel],
-    redirect: null,
+    redirect: "https://j-pims.com/",
   },
   {
     image: "/assets/projects/jdims.png",
@@ -314,7 +314,7 @@ const data = [
       "Digital museum platform for Jember to showcase collections and stories online.",
     github: null,
     build: [SelectionTech.React, SelectionTech.Laravel],
-    redirect: null,
+    redirect: "https://j-dims.com/",
   },
   {
     image: "/assets/projects/gocpns.png",
@@ -341,7 +341,7 @@ const data = [
       "Membership management platform complete with digital member cards and directory features.",
     github: null,
     build: [SelectionTech.Laravel, SelectionTech.React],
-    redirect: null,
+    redirect: "https://padisda.or.id/",
   },
 ];
 
