@@ -218,13 +218,13 @@ const About = () => {
                 <span className="font-poppins-semibold">
                   Bintang Malindo Eka Putra
                 </span>
-                , a 8th semester Informatics Engineering student from Jember
-                State Polytechnic. I have a strong interest in{" "}
+                , a fresh graduate in Informatics Engineering from Jember State
+                Polytechnic. I am deeply interested in{" "}
                 <span className="bg-slate-200 dark:bg-slate-700">
-                  Website and Mobile application development
+                  Web and Mobile Development
                 </span>
                 .
-                <br /> <br />I have work experience and am active in various
+                <br /> <br />I have work experience and stay active in various
                 activities. Able to work individually and in a team, have good
                 analysis and planning, communicative, easy to adapt,
                 enthusiastic to develop, and interested in learning new things.
@@ -239,9 +239,9 @@ const About = () => {
             <div className="flex flex-col gap-2">
               <Education
                 school={"Jember State Polytechnic"}
-                date={"2021 - Present"}
+                date={"2021 - 2024"}
                 position={
-                  "Informatics Engineering (Current GPA: 3.92 out of 4.0)"
+                  "Informatics Engineering (GPA: 3.93 out of 4.0)"
                 }
               />
               <Education
