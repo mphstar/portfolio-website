@@ -298,6 +298,51 @@ const data = [
     build: [SelectionTech.Laravel, SelectionTech.Mysql],
     redirect: null,
   },
+  {
+    image: "/assets/projects/jpims.png",
+    title: "J-PiMS",
+    deskripsi:
+      "Personalized tourism management system for Jember to curate destinations and experiences.",
+    github: null,
+    build: [SelectionTech.React, SelectionTech.Laravel],
+    redirect: null,
+  },
+  {
+    image: "/assets/projects/jdims.png",
+    title: "J-DiMS",
+    deskripsi:
+      "Digital museum platform for Jember to showcase collections and stories online.",
+    github: null,
+    build: [SelectionTech.React, SelectionTech.Laravel],
+    redirect: null,
+  },
+  {
+    image: "/assets/projects/gocpns.png",
+    title: "Go-CPNS",
+    deskripsi:
+      "Tryout website for CPNS preparation similar to ayocpns with practice tests and progress tracking.",
+    github: null,
+    build: [SelectionTech.Laravel, SelectionTech.React],
+    redirect: null,
+  },
+  {
+    image: "/assets/projects/nch.png",
+    title: "NCH Project",
+    deskripsi:
+      "Pesantren school information system (SD/SMP/SMA); contributed to master data, academic, reporting, and finance modules.",
+    github: null,
+    build: [SelectionTech.Laravel, SelectionTech.React],
+    redirect: "https://www.nurulchotib.com/",
+  },
+  {
+    image: "/assets/projects/padisda.png",
+    title: "Padisda",
+    deskripsi:
+      "Membership management platform complete with digital member cards and directory features.",
+    github: null,
+    build: [SelectionTech.Laravel, SelectionTech.React],
+    redirect: null,
+  },
 ];
 
 export default data;
