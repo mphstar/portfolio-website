@@ -13,11 +13,11 @@ const ContentAchievement = ({
   foto,
 }: {
   profile: string;
-  tanggal: String;
-  judul: String;
-  penerbit: String;
-  keahlian: any;
-  foto: any;
+  tanggal: string;
+  judul: string;
+  penerbit: string;
+  keahlian: string[];
+  foto: string[];
 }) => {
   return (
     <motion.div className="flex flex-row w-full gap-3">
