@@ -10,6 +10,30 @@ export type AchievementItem = {
 const achievements: AchievementItem[] = [
   {
     profile: "/assets/foto.jpg",
+    tanggal: "Juni 2025 - Juni 2027",
+    judul: "Uji Kompetensi Pengembang Web",
+    penerbit: "Badan Nasional Sertifikasi Profesi (BNSP)",
+    keahlian: ["Front-End Development", "Back-End Development"],
+    foto: ["/assets/sertif/ujikom.jpeg"],
+  },
+  {
+    profile: "/assets/foto.jpg",
+    tanggal: "Desember 2024",
+    judul: "Sertifikat Magang Front-End Developer di PT. Otak Kanan",
+    penerbit: "PT. Otak Kanan",
+    keahlian: ["Front-End Development"],
+    foto: ["/assets/sertif/magang.jpg"],
+  },
+  {
+    profile: "/assets/foto.jpg",
+    tanggal: "Juni 2024",
+    judul: "Finalis Hackton SDGs UM 2024 National Competition Kategori Sosial Impact",
+    penerbit: "Universitas Negeri Malang",
+    keahlian: ["Front-End Development", "Back-End Development"],
+    foto: ["/assets/sertif/finalis_hackton.jpg"],
+  },
+  {
+    profile: "/assets/foto.jpg",
     tanggal: "February 2024 - February 2027",
     judul: "Belajar Membuat Front-End Web untuk Pemula",
     penerbit: "Dicoding Indonesia",
